@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Diagnóstico Estratégico · Heysa Helena</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{--ink:#1A2230;--navy:#16233A;--navy-2:#22344F;--bronze:#B08D57;--bronze-dk:#8A6D3F;--paper:#F8F6F1;--card:#FFFFFF;--line:#E7E2D8;--line-2:#EFEBE2;--muted:#5A6472;--ok:#3E6B5E;--no:#A6534A;}
+  *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+  body{background:var(--paper);color:var(--ink);font-family:'Inter',sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 24px}
+  h1,h2,h3,h4,.serif{font-family:'Fraunces',serif}
+  .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--bronze-dk);font-weight:600;font-family:'Inter',sans-serif}
+  .hero{background:linear-gradient(160deg,var(--navy) 0%,#101B2E 100%);color:#EDE7DA;padding:66px 0 58px;position:relative;overflow:hidden}
+  .hero:before{content:"";position:absolute;top:-40%;right:-10%;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(176,141,87,.18),transparent 70%)}
+  .hero .wrap{position:relative}
+  .wordmark{font-family:'Fraunces',serif;font-weight:600;font-size:15px;color:#EDE7DA}
+  .wordmark small{display:block;font-family:'Inter',sans-serif;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--bronze);font-weight:600;margin-top:2px}
+  .hero h1{font-size:clamp(1.9rem,4.2vw,2.9rem);line-height:1.1;font-weight:600;margin:24px 0 12px;color:#fff}
+  .hero h1 em{color:var(--bronze);font-style:italic}
+  .hero .lead{font-size:1.05rem;color:#C9D0DC;max-width:660px}
+  section{padding:52px 0;border-bottom:1px solid var(--line)}section:last-of-type{border-bottom:0}
+  .sec-h{margin-bottom:24px}
+  .sec-h h2{font-size:clamp(1.45rem,3vw,1.95rem);font-weight:600;line-height:1.15;margin-top:6px}
+  .sec-h p{color:var(--muted);max-width:730px;margin-top:10px}
+  strong{color:var(--ink);font-weight:600}.muted{color:var(--muted)}.small{font-size:14px}
+  .thesis{background:linear-gradient(120deg,var(--navy),var(--navy-2));color:#EDE7DA;border-radius:18px;padding:34px 36px}
+  .thesis .q{font-family:'Fraunces',serif;font-size:1.5rem;line-height:1.35;color:#fff}
+  .thesis .q b{color:var(--bronze)}
+  .thesis p{color:#C9D0DC;margin-top:14px;font-size:15px}
+  .grid{display:grid;gap:16px}.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:15px;padding:22px}
+  .card h3{font-size:1.06rem;font-weight:600;margin-bottom:7px}
+  .card .ic{width:36px;height:36px;border-radius:9px;background:#F3EEE4;color:var(--bronze-dk);display:flex;align-items:center;justify-content:center;font-weight:700;font-family:'Fraunces',serif;margin-bottom:12px}
+  .vs{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .vs .col{border-radius:15px;padding:22px;border:1px solid var(--line)}
+  .vs .no{background:#FBF1EF;border-color:#EBD5D0}
+  .vs .ok{background:#EEF4F1;border-color:#D3E4DC}
+  .vs h4{font-size:.95rem;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+  .vs .no h4{color:var(--no)}.vs .ok h4{color:var(--ok)}
+  .vs ul{list-style:none;display:grid;gap:9px}
+  .vs li{position:relative;padding-left:20px;font-size:14.5px;color:var(--ink)}
+  .vs .no li:before{content:"×";position:absolute;left:0;color:var(--no);font-weight:700}
+  .vs .ok li:before{content:"✓";position:absolute;left:0;color:var(--ok);font-weight:700}
+  table{width:100%;border-collapse:collapse;margin-top:8px;font-size:14px}
+  th,td{text-align:left;padding:12px 13px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:#F3EEE4;color:var(--navy);font-weight:600;font-size:12px;letter-spacing:.03em;text-transform:uppercase}
+  tr:last-child td{border-bottom:0}
+  .voc td:first-child{color:var(--ok);font-weight:500}.voc td:last-child{color:var(--no)}
+  .ex{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-top:14px}
+  .ex .bad{color:var(--no);font-size:14px;padding-left:20px;position:relative;margin-bottom:10px}
+  .ex .bad:before{content:"×";position:absolute;left:0;font-weight:700}
+  .ex .good{color:var(--ink);font-size:14.5px;padding-left:20px;position:relative}
+  .ex .good:before{content:"✓";position:absolute;left:0;color:var(--ok);font-weight:700}
+  .persona{display:flex;gap:16px;padding:18px 0;border-bottom:1px solid var(--line-2)}
+  .persona:last-child{border-bottom:0}
+  .persona .n{flex:0 0 44px;height:44px;border-radius:50%;background:var(--navy);color:var(--bronze);display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-weight:600}
+  .persona h4{font-size:1.02rem;font-weight:600;margin-bottom:3px}
+  .persona .dor{font-size:13.5px;color:var(--muted);margin-top:5px}
+  .persona .dor b{color:var(--navy)}
+  .note{background:#F3EEE4;border:1px solid var(--line);border-radius:14px;padding:16px 18px;font-size:14px;color:var(--ink)}.note b{color:var(--bronze-dk)}
+  .cta{background:var(--navy);color:#EDE7DA;border-radius:18px;padding:34px;text-align:center}
+  .cta h2{color:#fff;font-size:1.5rem}.cta p{color:#C9D0DC;max-width:560px;margin:10px auto 0}
+  .cta a{display:inline-block;margin-top:18px;background:var(--bronze);color:#1A2230;font-weight:600;text-decoration:none;padding:12px 24px;border-radius:999px;font-size:14px}
+  footer{padding:32px 0;text-align:center;color:var(--muted);font-size:13px}
+  footer .oab{max-width:680px;margin:0 auto 10px;font-size:12.5px}
+  @media(max-width:760px){.g2,.g3,.vs{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header class="hero"><div class="wrap">
+  <div class="wordmark">Heysa Helena de Sales<small>Advocacia Tributária</small></div>
+  <h1>Diagnóstico Estratégico<br>da <em>marca</em></h1>
+  <p class="lead">A base de tudo: como a marca se posiciona, com que voz ela fala e para quem. É este diagnóstico que dá origem a cada peça de conteúdo do planejamento.</p>
+</div></header>
+
+<!-- TESE -->
+<section><div class="wrap">
+  <div class="sec-h"><span class="eyebrow">A direção estratégica</span><h2>A tese central da marca</h2></div>
+  <div class="thesis">
+    <div class="q">"A advocacia tributária como ferramenta de <b>gestão de risco e preservação de caixa</b> — pautada em análise técnica rigorosa e conformidade legal absoluta."</div>
+    <p>Na prática, isso significa comunicar o <strong style="color:#fff">meio</strong> (o diagnóstico correto, o laudo preciso, a análise de capacidade de pagamento) — <strong style="color:#fff">nunca o fim</strong> (o desconto). A mensagem que resume tudo: <em style="color:var(--bronze)">"antes de pagar ou parcelar, faça um diagnóstico."</em></p>
+  </div>
+</div></section>
+
+<!-- O QUE É / NÃO É -->
+<section><div class="wrap">
+  <div class="sec-h"><span class="eyebrow">Território</span><h2>O que a marca é — e o que não é</h2>
+    <p>A categoria mental que a marca ocupa: <strong>inteligência tributária para a continuidade empresarial</strong>. Não "advogada de desconto", não consultoria genérica.</p></div>
+  <div class="vs">
+    <div class="col no"><h4>O que combatemos</h4><ul>
+      <li>Parcelar no impulso, sem diagnóstico</li>
+      <li>A mercantilização da advocacia</li>
+      <li>O juridiquês rebuscado e inacessível</li>
+      <li>A crença de que "a contabilidade resolve sozinha"</li>
+    </ul></div>
+    <div class="col ok"><h4>O que representamos</h4><ul>
+      <li>Diagnóstico técnico antes de qualquer decisão</li>
+      <li>Autoridade que se mostra por precisão, não por superlativo</li>
+      <li>A tradução da complexidade para o empresário</li>
+      <li>A continuidade do negócio — CND, licitações, crédito, caixa</li>
+    </ul></div>
+  </div>
+  <div class="note" style="margin-top:18px"><b>O diferencial real.</b> Não é o desconto (que depende da lei) — é o <strong>diagnóstico prévio</strong> e a elaboração própria do <strong>Laudo de Revisão de Capacidade de Pagamento (PGFN)</strong>: um ativo técnico raro que evita parcelamentos impagáveis e sustenta a transação.</div>
+</div></section>
+
+<!-- ARQUÉTIPO -->
+<section><div class="wrap">
+  <div class="sec-h"><span class="eyebrow">A personalidade</span><h2>Arquétipo &amp; essência</h2></div>
+  <div class="grid g2">
+    <div class="card"><div class="ic">🦉</div><h3>O Sábio</h3><p class="muted small">Busca a verdade pela análise de dados e leis. Não usa artifícios emocionais — usa evidência técnica. A promessa é a <strong>clareza</strong>.</p></div>
+    <div class="card"><div class="ic">♟️</div><h3>Nuance de Governante</h3><p class="muted small">Transmite autoridade, ordem e controle sobre o caos fiscal (execuções, bloqueios). A marca é o <strong>porto seguro</strong> em meio à tempestade.</p></div>
+  </div>
+  <div class="thesis" style="margin-top:16px;padding:26px 32px"><div class="q" style="font-size:1.3rem">Essência: <b>Previsibilidade Técnica para a Continuidade Empresarial.</b></div></div>
+</div></section>
+
+<!-- TOM DE VOZ -->
+<section><div class="wrap">
+  <div class="sec-h"><span class="eyebrow">A voz</span><h2>Como a marca fala</h2>
+    <p>Formal (padrão advocacia), porém moderna e acessível ao empresário. Elegante, sem ser inacessível. Toda mensagem orbita 3 pilares:</p></div>
+  <div class="grid g3">
+    <div class="card"><div class="ic">01</div><h3>Diagnóstico antes da ação</h3><p class="muted small">Parcelar sem análise técnica é risco financeiro. A inteligência está no diagnóstico prévio.</p></div>
+    <div class="card"><div class="ic">02</div><h3>Continuidade empresarial</h3><p class="muted small">Não é só "pagar imposto" — é proteger a operação: certidões, licitações, crédito, evitar bloqueios.</p></div>
+    <div class="card"><div class="ic">03</div><h3>Previsibilidade técnica</h3><p class="muted small">Trocar o "acho que consigo desconto" pela análise técnica das portarias e editais vigentes.</p></div>
+  </div>
+
+  <h3 style="font-size:1.15rem;margin:30px 0 10px">Tom por canal</h3>
+  <table><thead><tr><th>Canal</th><th>Formalidade</th><th>Objetivo</th></tr></thead><tbody>
+    <tr><td><strong>Instagram</strong></td><td>Médio-alto (didático)</td><td>Traduzir editais e explicar prazos fiscais</td></tr>
+    <tr><td><strong>LinkedIn</strong></td><td>Alto (técnico)</td><td>Autoridade perante pares e diretores</td></tr>
+    <tr><td><strong>WhatsApp</strong></td><td>Profissional/cordial</td><td>Condução do método (reunião, sigilo, diagnóstico)</td></tr>
+  </tbody></table>
+
+  <h3 style="font-size:1.15rem;margin:30px 0 10px">Vocabulário</h3>
+  <table class="voc"><thead><tr><th style="color:var(--ok)">Use</th><th style="color:var(--no)">Evite</th></tr></thead><tbody>
+    <tr><td>Diagnóstico técnico</td><td>Promessa de desconto</td></tr>
+    <tr><td>Regularidade fiscal · Continuidade empresarial</td><td>Limpar o nome · Pagar menos imposto</td></tr>
+    <tr><td>Revisão de capacidade de pagamento</td><td>Desconto imperdível · Solução milagrosa</td></tr>
+    <tr><td>Critérios do edital · Transação por adesão</td><td>Garantia de êxito · Jeitinho jurídico</td></tr>
+  </tbody></table>
+
+  <h3 style="font-size:1.15rem;margin:30px 0 10px">Na prática — certo × errado</h3>
+  <div class="ex">
+    <div class="bad">"Corra! Descontos de até 70% vencem hoje. Me chama no direct para garantir o seu e salvar sua empresa."</div>
+    <div class="good">"O Edital PGFN nº 6/2026 estabelece critérios específicos para a transação de débitos de difícil recuperação. É fundamental analisar a classificação de capacidade de pagamento antes da adesão, para garantir a sustentabilidade do acordo."</div>
+  </div>
+  <div class="ex">
+    <div class="bad">"Teve a conta bloqueada? Eu resolvo rápido e libero seu dinheiro com uma transação infalível."</div>
+    <div class="good">"A execução fiscal pode resultar em bloqueio de ativos. A transação tributária surge como alternativa legal para regularizar o passivo e suspender atos de cobrança, desde que preenchidos os requisitos técnicos."</div>
+  </div>
+  <div class="note" style="margin-top:18px"><b>Régua OAB (Provimento 205/2021).</b> Proibido "garanto/resultado certo/ganho de causa/melhor preço", valores de desconto, casos concretos identificáveis e CTA de urgência comercial. Caráter puramente informativo — a norma, o edital, o conceito.</div>
+</div></section>
+
+<!-- PERSONAS -->
+<section><div class="wrap">
+  <div class="sec-h"><span class="eyebrow">Para quem</span><h2>As 3 personas</h2>
+    <p>Empresas de <strong>R$ 1 mi a R$ 20 mi</strong> em Macaé e Região dos Lagos (offshore, logística, transporte, construção) com dívida ou execução fiscal.</p></div>
+  <div class="persona"><div class="n">1</div><div>
+    <h4>O Empresário Pressionado</h4><p class="muted small">Dono do negócio, responsável final pela sobrevivência da empresa.</p>
+    <p class="dor"><b>Dor:</b> "Minha conta foi bloqueada"; "não consigo emitir a certidão para receber"; "o parcelamento comum está consumindo meu lucro". <b>Gatilho:</b> citação de execução fiscal ou risco de perder um contrato por falta de CND.</p></div></div>
+  <div class="persona"><div class="n">2</div><div>
+    <h4>O Diretor Financeiro (CFO)</h4><p class="muted small">Gestor de números; entende de impostos, mas não das nuances da Revisão de Capacidade de Pagamento.</p>
+    <p class="dor"><b>Dor:</b> fluxo de caixa estrangulado por parcelamentos mal planejados; medo da responsabilidade solidária. <b>Gatilho:</b> editais com janela por tempo limitado (como o PGFN nº 6/2026).</p></div></div>
+  <div class="persona"><div class="n">3</div><div>
+    <h4>O Contador Parceiro (influenciador)</h4><p class="muted small">Primeiro a ver o problema; nem sempre tem a ferramenta jurídica para a negociação na PGFN.</p>
+    <p class="dor"><b>Dor:</b> "o cliente acha que eu deveria conseguir o desconto, mas o sistema não libera". <b>Gatilho:</b> necessidade de um Laudo Técnico que ele não pode emitir. <b>Regra:</b> comunicar complementaridade, sem atrito com a classe contábil.</p></div></div>
+</div></section>
+
+<!-- CONEXÃO -->
+<section style="border-bottom:0"><div class="wrap">
+  <div class="cta">
+    <h2>É este diagnóstico que guia o conteúdo</h2>
+    <p>Cada pauta do planejamento editorial nasce de um destes pilares, fala com uma destas personas e respeita este tom de voz. Veja a grade completa:</p>
+    <a href="plano-conteudo-heysa.html">Ver o planejamento de conteúdo →</a>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <p class="oab">Diagnóstico preliminar de marca (a consolidar com percepção externa). Comunicação em conformidade com o Provimento 205/2021 (OAB) — estritamente informativa e educativa. Documento sujeito à revisão e aprovação da cliente.</p>
+  <p>Marketing Growth Digital · mktgrowthdigital.com</p>
+</div></footer>
+
+</body>
+</html>

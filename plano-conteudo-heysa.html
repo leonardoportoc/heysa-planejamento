@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Planejamento de Conteúdo · Heysa Helena · Jul–Set 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --ink:#1A2230;--navy:#16233A;--navy-2:#22344F;--bronze:#B08D57;--bronze-dk:#8A6D3F;
+    --paper:#F8F6F1;--card:#FFFFFF;--line:#E7E2D8;--line-2:#EFEBE2;--muted:#5A6472;
+    --c1:#3E6B5E;--c2:#8A5A3C;--c3:#3A4E74;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--paper);color:var(--ink);font-family:'Inter',sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 24px}
+  h1,h2,h3,h4,.serif{font-family:'Fraunces',serif}
+  .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--bronze-dk);font-weight:600;font-family:'Inter',sans-serif}
+
+  .hero{background:linear-gradient(160deg,var(--navy) 0%,#101B2E 100%);color:#EDE7DA;padding:66px 0 58px;position:relative;overflow:hidden}
+  .hero:before{content:"";position:absolute;top:-40%;right:-10%;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(176,141,87,.18),transparent 70%)}
+  .hero .wrap{position:relative}
+  .wordmark{font-family:'Fraunces',serif;font-weight:600;font-size:15px;color:#EDE7DA}
+  .wordmark small{display:block;font-family:'Inter',sans-serif;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--bronze);font-weight:600;margin-top:2px}
+  .hero h1{font-size:clamp(1.9rem,4.2vw,2.9rem);line-height:1.1;font-weight:600;margin:24px 0 12px;color:#fff}
+  .hero h1 em{color:var(--bronze);font-style:italic}
+  .hero .lead{font-size:1.05rem;color:#C9D0DC;max-width:660px}
+  .hero .lead strong{color:#D8B98A;font-weight:600}
+  .hero .period{display:inline-flex;gap:10px;align-items:center;margin-top:24px;font-size:14px;color:#EDE7DA;border:1px solid rgba(176,141,87,.4);border-radius:999px;padding:8px 18px}
+  .hero .period b{color:var(--bronze);font-weight:600}
+
+  section{padding:52px 0;border-bottom:1px solid var(--line)}
+  section:last-of-type{border-bottom:0}
+  .sec-h{margin-bottom:24px}
+  .sec-h h2{font-size:clamp(1.45rem,3vw,1.95rem);font-weight:600;line-height:1.15;margin-top:6px}
+  .sec-h p{color:var(--muted);max-width:730px;margin-top:10px}
+  strong{color:var(--ink);font-weight:600}.muted{color:var(--muted)}.small{font-size:14px}
+
+  .grid{display:grid;gap:16px}.g3{grid-template-columns:repeat(3,1fr)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:15px;padding:22px}
+  .card h3{font-size:1.06rem;font-weight:600;margin-bottom:7px}
+  .card .ic{width:36px;height:36px;border-radius:9px;background:#F3EEE4;color:var(--bronze-dk);display:flex;align-items:center;justify-content:center;font-weight:700;font-family:'Fraunces',serif;margin-bottom:12px}
+
+  .fmt{display:flex;gap:14px;align-items:flex-start;padding:15px 0;border-bottom:1px solid var(--line-2)}
+  .fmt:last-child{border-bottom:0}
+  .chip{flex:0 0 auto;font-family:'Fraunces',serif;font-weight:600;color:#fff;border-radius:9px;padding:6px 12px;font-size:14px}
+  .c1{background:var(--c1)}.c2{background:var(--c2)}.c3{background:var(--c3)}
+  .fmt h4{font-size:1rem;font-weight:600;margin-bottom:2px}
+
+  .month-h{display:flex;align-items:center;gap:15px;padding:16px 20px;background:linear-gradient(100deg,var(--navy),var(--navy-2));color:#fff;border-radius:14px 14px 0 0;margin-top:26px}
+  .month-h .num{font-family:'Fraunces',serif;font-size:1.7rem;font-weight:600;color:var(--bronze);line-height:1}
+  .month-h .mt{font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--bronze);font-weight:600}
+  .month-h h3{font-size:1.15rem;font-weight:600;color:#fff;margin-top:1px}
+  .gtable{border:1px solid var(--line);border-top:0;border-radius:0 0 14px 14px;overflow:hidden}
+  table{width:100%;border-collapse:collapse;font-size:14px}
+  th,td{text-align:left;padding:12px 13px;border-bottom:1px solid var(--line);vertical-align:middle}
+  th{background:#F3EEE4;color:var(--navy);font-weight:600;font-size:12px;letter-spacing:.03em;text-transform:uppercase}
+  tr:last-child td{border-bottom:0}
+  .badge{display:inline-block;font-family:'Fraunces',serif;font-weight:600;color:#fff;border-radius:6px;padding:2px 8px;font-size:12px}
+  .btn-read{font-family:'Inter',sans-serif;font-size:12.5px;font-weight:600;color:var(--navy);background:#fff;border:1px solid var(--bronze);border-radius:999px;padding:5px 14px;cursor:pointer;white-space:nowrap;transition:.15s}
+  .btn-read:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
+  td.tt{font-weight:500;color:var(--ink);max-width:340px}
+
+  .stories{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .stcard{background:var(--card);border:1px solid var(--line);border-radius:15px;padding:20px}
+  .stcard .mo{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--bronze-dk);font-weight:600}
+  .stcard h4{font-size:1.05rem;margin:4px 0 10px}
+  .stcard ul{list-style:none;display:grid;gap:8px}
+  .stcard li{position:relative;padding-left:20px;color:var(--muted);font-size:13.5px}
+  .stcard li:before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--bronze)}
+  .freq{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .fq{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-align:center}
+  .fq .b{font-family:'Fraunces',serif;font-size:2rem;color:var(--navy);font-weight:600;line-height:1}
+  .fq .l{font-size:13px;color:var(--muted);margin-top:6px}
+
+  .note{background:#F3EEE4;border:1px solid var(--line);border-radius:14px;padding:16px 18px;font-size:14px;color:var(--ink)}
+  .note b{color:var(--bronze-dk)}
+
+  footer{padding:32px 0;text-align:center;color:var(--muted);font-size:13px}
+  footer .oab{max-width:680px;margin:0 auto 10px;font-size:12.5px}
+
+  /* MODAL */
+  .ov{position:fixed;inset:0;background:rgba(16,23,40,.55);backdrop-filter:blur(3px);display:none;align-items:flex-start;justify-content:center;padding:40px 18px;z-index:50;overflow-y:auto}
+  .ov.on{display:flex}
+  .modal{background:var(--paper);max-width:640px;width:100%;border-radius:18px;overflow:hidden;box-shadow:0 30px 80px rgba(16,23,40,.4);animation:pop .2s ease}
+  @keyframes pop{from{transform:translateY(14px);opacity:0}to{transform:none;opacity:1}}
+  .modal-h{background:linear-gradient(120deg,var(--navy),var(--navy-2));color:#fff;padding:22px 26px;position:relative}
+  .modal-h .fmt-tag{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--bronze);font-weight:600}
+  .modal-h h3{font-size:1.35rem;color:#fff;margin-top:4px;line-height:1.2}
+  .modal-h .x{position:absolute;top:18px;right:20px;color:#EDE7DA;font-size:22px;cursor:pointer;line-height:1;background:none;border:0}
+  .modal-b{padding:24px 26px 30px}
+  .modal-b h4{font-family:'Inter',sans-serif;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--bronze-dk);font-weight:600;margin:20px 0 8px}
+  .modal-b h4:first-child{margin-top:0}
+  .modal-b p{font-size:15px;margin-bottom:8px}
+  .modal-b ol,.modal-b ul{margin:2px 0 8px 4px;padding-left:18px}
+  .modal-b li{font-size:14.5px;margin-bottom:6px}
+  .modal-b .leg{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px;font-size:14.5px;color:var(--ink);white-space:pre-line}
+  .modal-b .oabmini{margin-top:16px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:12px}
+
+  @media(max-width:760px){.g3,.stories{grid-template-columns:1fr}.freq{grid-template-columns:1fr 1fr}td.tt{max-width:none}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="wordmark">Heysa Helena de Sales<small>Advocacia Tributária</small></div>
+    <h1>Planejamento de Conteúdo<br>e <em>grade editorial</em></h1>
+    <p class="lead">A comunicação dos próximos três meses: pilares, temas mês a mês e o conteúdo de cada peça — para a sua leitura e aprovação. Clique em <strong>Ler</strong> em qualquer tema para ver a peça pronta.</p>
+    <div class="period">📅 <b>Julho a Setembro de 2026</b> · conteúdo educativo · conforme OAB</div>
+  </div>
+</header>
+
+<!-- ESTRATÉGIA -->
+<section>
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="eyebrow">A ideia central</span>
+      <h2>Autoridade técnica que gera confiança</h2>
+      <p>Cada peça ensina a "regra do jogo" tributário para que o empresário reconheça o problema e a solução técnica — construindo, ao longo do trimestre, a percepção de que aqui está a referência para diagnosticar antes de decidir. Comunicamos sempre o <strong>método</strong> (o diagnóstico, o laudo, a análise), nunca a promessa de resultado.</p>
+    </div>
+    <p style="margin-bottom:16px"><a href="diagnostico-estrategico-heysa.html" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;color:var(--navy);text-decoration:none;border:1px solid var(--bronze);border-radius:999px;padding:9px 18px;font-size:14px">📐 Este planejamento nasce do Diagnóstico Estratégico — posicionamento, tom de voz e personas →</a></p>
+    <div class="note"><b>Régua OAB (Provimento 205/2021).</b> Todo o conteúdo é estritamente informativo e educativo — sem promessa de resultado, sem casos concretos, sem urgência comercial. <strong>Cada peça segue para a sua revisão antes de publicar.</strong></div>
+  </div>
+</section>
+
+<!-- PILARES -->
+<section>
+  <div class="wrap">
+    <div class="sec-h"><span class="eyebrow">A base editorial</span><h2>Os 5 pilares</h2></div>
+    <div class="grid g3">
+      <div class="card"><div class="ic">01</div><h3>Educação Técnica</h3><p class="muted small">A regra do jogo: RFB × PGFN, capacidade de pagamento, transação, execução fiscal, certidões.</p></div>
+      <div class="card"><div class="ic">02</div><h3>Alerta &amp; Prevenção</h3><p class="muted small">Por que diagnosticar antes de parcelar; o risco do parcelamento impagável; a responsabilidade do sócio.</p></div>
+      <div class="card"><div class="ic">03</div><h3>Contexto &amp; Oportunidade</h3><p class="muted small">As janelas legais do momento (Edital PGFN nº 6/2026, Portaria RFB 676/2026), de forma didática.</p></div>
+      <div class="card"><div class="ic">04</div><h3>Autoridade &amp; Método</h3><p class="muted small">Como funciona o diagnóstico e o Laudo de Capacidade de Pagamento — o rigor que diferencia.</p></div>
+      <div class="card"><div class="ic">05</div><h3>Conexão Local</h3><p class="muted small">O cenário de Macaé e do setor offshore — a língua do empresário da região.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FORMATOS -->
+<section>
+  <div class="wrap">
+    <div class="sec-h"><span class="eyebrow">Os formatos</span><h2>Como cada peça se apresenta</h2></div>
+    <div class="fmt"><span class="chip c2" style="min-width:92px;text-align:center">Reels</span><div><h4>Reels · vídeo 45–90s</h4><p class="muted small">Um conceito técnico desenvolvido com profundidade, a partir de um roteiro completo (gancho nos 3s → desenvolvimento em arco → recapitulação → convite ao diagnóstico). Formato mais longo de propósito: para conteúdo educativo e de autoridade, a faixa de 45–90s é a que sustenta mais tempo de exibição e engajamento — o que o algoritmo prioriza.</p></div></div>
+    <div class="fmt"><span class="chip c3" style="min-width:92px;text-align:center">Autoridade</span><div><h4>Post estático de autoridade</h4><p class="muted small">Uma definição ou insight técnico em arte única, direto e on-brand — reforça a percepção de referência técnica no feed.</p></div></div>
+  </div>
+</section>
+
+<!-- CADÊNCIA -->
+<section><div class="wrap">
+  <div class="sec-h"><span class="eyebrow">O ritmo</span><h2>A cadência semanal</h2>
+    <p>Toda semana, um conjunto fixo de peças alimenta os canais — com os Stories sustentando o engajamento e a conversão da audiência no dia a dia.</p></div>
+  <div class="freq">
+    <div class="fq"><div class="b">3</div><div class="l">Reels / semana<br><span style="font-size:11px">vídeo de autoridade · 45–90s</span></div></div>
+    <div class="fq"><div class="b">1</div><div class="l">Post de autoridade / sem.<br><span style="font-size:11px">card técnico estático</span></div></div>
+    <div class="fq"><div class="b" style="color:var(--bronze-dk)">3</div><div class="l">Stories / semana<br><span style="font-size:11px">autoridade · engajamento · conversão</span></div></div>
+    <div class="fq"><div class="b">2</div><div class="l">Google Meu Negócio<br><span style="font-size:11px">2 posts / semana</span></div></div>
+  </div>
+  <div class="note" style="margin-top:16px"><b>No mês:</b> ~12 Reels · 4 Posts de autoridade (16 peças de feed) + ~12 Stories · ~8 posts no Google Meu Negócio. <b>2 conteúdos por semana</b> são adaptados para o <b>LinkedIn</b> (autoridade B2B). Um mesmo tema-âncora rende mais de uma peça (Reels, card, stories) — por isso poucos temas fortes alimentam a semana inteira.</div>
+</div></section>
+
+<!-- GRADE -->
+<section>
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="eyebrow">A grade</span>
+      <h2>Temas-âncora, mês a mês</h2>
+      <p>Estes são os temas que guiam a produção de cada mês, no arco do calendário do Edital PGFN. Na execução, cada tema é desdobrado nos formatos da semana (Reels, post de autoridade e stories) — poucos temas fortes rendem as peças da semana. Clique em <strong>Ler</strong> para ver um exemplo de peça pronta.</p>
+    </div>
+
+    <div class="month-h"><div class="num">01</div><div><div class="mt">Julho · Fundamentos &amp; a janela do Edital</div><h3>Ensinar a regra do jogo</h3></div></div>
+    <div class="gtable"><table><thead><tr><th>Tema-âncora</th><th>Formato</th><th>Canal</th><th>Persona</th><th></th></tr></thead><tbody>
+      <tr><td class="tt">RFB × PGFN: quem cobra o quê — e por que isso muda a estratégia</td><td><span class="badge c2">Reels</span></td><td>IG · LinkedIn</td><td>CFO · Contador</td><td><button class="btn-read" data-id="j1">Ler</button></td></tr>
+      <tr><td class="tt">O que é "capacidade de pagamento" — e por que ela define a transação</td><td><span class="badge c2">Reels</span></td><td>Instagram</td><td>CFO</td><td><button class="btn-read" data-id="j2">Ler</button></td></tr>
+      <tr><td class="tt">Edital PGFN nº 6/2026, explicado sem juridiquês</td><td><span class="badge c2">Reels</span></td><td>IG · LinkedIn</td><td>Empresário · CFO</td><td><button class="btn-read" data-id="j3">Ler</button></td></tr>
+      <tr><td class="tt">Contador e advogado: a dupla que preserva o caixa da empresa</td><td><span class="badge c2">Reels</span></td><td>Instagram</td><td>Contador</td><td><button class="btn-read" data-id="j5">Ler</button></td></tr>
+      <tr><td class="tt">Antes de parcelar, faça um diagnóstico: o risco do parcelamento no impulso</td><td><span class="badge c3">Autoridade</span></td><td>Instagram</td><td>Empresário</td><td><button class="btn-read" data-id="j4">Ler</button></td></tr>
+      <tr><td class="tt">O caminho de um diagnóstico: da análise ao laudo</td><td><span class="badge c3">Autoridade</span></td><td>LinkedIn</td><td>CFO</td><td><button class="btn-read" data-id="j6">Ler</button></td></tr>
+    </tbody></table></div>
+
+    <div class="month-h"><div class="num">02</div><div><div class="mt">Agosto · Impacto no negócio &amp; autoridade</div><h3>Mostrar o que está em jogo</h3></div></div>
+    <div class="gtable"><table><thead><tr><th>Tema-âncora</th><th>Formato</th><th>Canal</th><th>Persona</th><th></th></tr></thead><tbody>
+      <tr><td class="tt">CND: a certidão que destrava (ou trava) contratos e licitações</td><td><span class="badge c2">Reels</span></td><td>IG · LinkedIn</td><td>Empresário</td><td><button class="btn-read" data-id="a1">Ler</button></td></tr>
+      <tr><td class="tt">Execução fiscal: o que acontece quando a dívida vira processo</td><td><span class="badge c2">Reels</span></td><td>Instagram</td><td>Empresário</td><td><button class="btn-read" data-id="a2">Ler</button></td></tr>
+      <tr><td class="tt">Responsabilidade solidária: quando a dívida da empresa chega no sócio</td><td><span class="badge c2">Reels</span></td><td>LinkedIn</td><td>CFO</td><td><button class="btn-read" data-id="a3">Ler</button></td></tr>
+      <tr><td class="tt">Macaé e o offshore: o cenário fiscal de quem contrata com grandes players</td><td><span class="badge c2">Reels</span></td><td>Instagram</td><td>Empresário</td><td><button class="btn-read" data-id="a5">Ler</button></td></tr>
+      <tr><td class="tt">O Laudo de Capacidade de Pagamento: o que é e por que importa</td><td><span class="badge c3">Autoridade</span></td><td>LinkedIn</td><td>CFO · Contador</td><td><button class="btn-read" data-id="a4">Ler</button></td></tr>
+      <tr><td class="tt">Portaria RFB 676/2026: usar prejuízo fiscal na transação</td><td><span class="badge c3">Autoridade</span></td><td>LinkedIn</td><td>CFO</td><td><button class="btn-read" data-id="a6">Ler</button></td></tr>
+    </tbody></table></div>
+
+    <div class="month-h"><div class="num">03</div><div><div class="mt">Setembro · Reta final do Edital &amp; consolidação</div><h3>Fechar o ciclo com clareza</h3></div></div>
+    <div class="gtable"><table><thead><tr><th>Tema-âncora</th><th>Formato</th><th>Canal</th><th>Persona</th><th></th></tr></thead><tbody>
+      <tr><td class="tt">Edital PGFN nº 6: o que checar na sua empresa antes de 30/09</td><td><span class="badge c2">Reels</span></td><td>IG · LinkedIn</td><td>Empresário · CFO</td><td><button class="btn-read" data-id="s1">Ler</button></td></tr>
+      <tr><td class="tt">Transação não é "desconto": é análise técnica de legalidade e capacidade</td><td><span class="badge c2">Reels</span></td><td>Instagram</td><td>Todos</td><td><button class="btn-read" data-id="s3">Ler</button></td></tr>
+      <tr><td class="tt">Depois do Edital: e quem não aderiu a tempo? Os caminhos que restam</td><td><span class="badge c2">Reels</span></td><td>LinkedIn</td><td>CFO</td><td><button class="btn-read" data-id="s4">Ler</button></td></tr>
+      <tr><td class="tt">O que muda na operação quando a regularidade fiscal volta</td><td><span class="badge c2">Reels</span></td><td>Instagram</td><td>Empresário</td><td><button class="btn-read" data-id="s5">Ler</button></td></tr>
+      <tr><td class="tt">Checklist: sua empresa está regular para emitir certidões?</td><td><span class="badge c3">Autoridade</span></td><td>Instagram</td><td>Empresário</td><td><button class="btn-read" data-id="s2">Ler</button></td></tr>
+      <tr><td class="tt">Como escolher quem cuida do seu passivo tributário (critérios técnicos)</td><td><span class="badge c3">Autoridade</span></td><td>LinkedIn</td><td>CFO · Contador</td><td><button class="btn-read" data-id="s6">Ler</button></td></tr>
+    </tbody></table></div>
+  </div>
+</section>
+
+<!-- STORIES -->
+<section>
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="eyebrow">Stories · 3 por semana</span>
+      <h2>Stories estratégicos</h2>
+      <p>Não é bastidor por bastidor. Cada semana tem 3 stories com função clara — um puxa <strong>autoridade</strong>, um gera <strong>engajamento</strong> e um convida à <strong>conversão</strong> (sempre de forma educativa). Clique em <strong>Ler</strong> para ver os roteiros.</p>
+    </div>
+    <div class="stories">
+      <div class="stcard"><div class="mo">Story 1 · Autoridade</div><h4>Ensinar em 3 telas</h4><ul><li>Um conceito técnico da semana, resumido</li><li>Conectado ao tema-âncora do feed</li><li>Leva para o post ("saiba mais 👉")</li></ul><button class="btn-read" data-id="st1" style="margin-top:12px">Ler roteiro</button></div>
+      <div class="stcard"><div class="mo">Story 2 · Engajamento</div><h4>Provocar a conversa</h4><ul><li>Enquete ou "mito × verdade"</li><li>Caixa de perguntas técnicas</li><li>Descobre a dúvida real da audiência</li></ul><button class="btn-read" data-id="st2" style="margin-top:12px">Ler roteiro</button></div>
+      <div class="stcard"><div class="mo">Story 3 · Conversão</div><h4>Convidar ao diagnóstico</h4><ul><li>Checklist rápido de regularidade</li><li>"Ficou em dúvida em algum ponto?"</li><li>CTA suave e educativo (link/WhatsApp)</li></ul><button class="btn-read" data-id="st3" style="margin-top:12px">Ler roteiro</button></div>
+    </div>
+    <div class="note" style="margin-top:16px"><b>3 stories por semana</b>, revezando essas 3 funções (autoridade · engajamento · conversão), sempre ancorados no tema da semana e revisados por você antes de ir ao ar.</div>
+  </div>
+</section>
+
+<!-- APROVAÇÃO -->
+<section style="border-bottom:0">
+  <div class="wrap">
+    <div class="sec-h"><span class="eyebrow">Para seguirmos</span><h2>O que precisamos da sua aprovação</h2></div>
+    <div class="grid g3">
+      <div class="card"><div class="ic">1</div><h3>Os pilares</h3><p class="muted small">Seu "de acordo" com a direção editorial dos 5 pilares.</p></div>
+      <div class="card"><div class="ic">2</div><h3>A grade de temas</h3><p class="muted small">A leitura das peças mês a mês — aprovando ou ajustando o que quiser.</p></div>
+      <div class="card"><div class="ic">3</div><h3>A revisão contínua</h3><p class="muted small">Cada peça finalizada segue para sua revisão antes de publicar.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap">
+  <p class="oab">Comunicação em conformidade com o Provimento 205/2021 (OAB): conteúdo estritamente informativo e educativo, sem promessa de resultado, sem oferta comercial. Conteúdo sujeito à revisão e aprovação da cliente.</p>
+  <p>Marketing Growth Digital · mktgrowthdigital.com</p>
+</div></footer>
+
+<!-- MODAL -->
+<div class="ov" id="ov">
+  <div class="modal">
+    <div class="modal-h"><div class="fmt-tag" id="m-fmt"></div><h3 id="m-title"></h3><button class="x" id="m-x">×</button></div>
+    <div class="modal-b" id="m-body"></div>
+  </div>
+</div>
+
+<script>
+const OAB='<div class="oabmini">Peça informativa/educativa · conforme OAB (Prov. 205/2021) · revisão da cliente antes de publicar.</div>';
+const TGT={j1:'CFO · Contador — Educação Técnica',j2:'CFO — Educação Técnica',j3:'Empresário · CFO — Contexto & Oportunidade',j4:'Empresário — Alerta & Prevenção',j5:'Contador — Conexão / Autoridade',j6:'CFO — Autoridade & Método',a1:'Empresário — Educação Técnica',a2:'Empresário — Alerta & Prevenção',a3:'CFO — Alerta & Prevenção',a4:'CFO · Contador — Autoridade & Método',a5:'Empresário — Conexão Local',a6:'CFO — Contexto & Oportunidade',s1:'Empresário · CFO — Contexto & Oportunidade',s2:'Empresário — Prevenção',s3:'Todas as personas — Posicionamento',s4:'CFO — Educação Técnica',s5:'Empresário — Educação Técnica',s6:'CFO · Contador — Autoridade & Método',st1:'Todas as personas — Autoridade',st2:'Todas as personas — Engajamento',st3:'Empresário · CFO — Conversão'};
+const COPY={
+j1:{f:'Reels · ~60s',t:'RFB × PGFN: quem cobra o quê',b:`<h4>Roteiro (~60s)</h4>
+<p><b>Gancho (0–3s):</b> "Receita e PGFN não são a mesma cobrança — e confundir as duas custa caro para a sua empresa."</p>
+<p><b>Contexto (3–16s):</b> Enquanto a dívida está na Receita Federal, ela é administrativa: ainda há espaço para revisão e para transação no contencioso.</p>
+<p><b>Desenvolvimento (16–42s):</b> Se não é resolvida, ela é inscrita em Dívida Ativa e passa à PGFN. Aí o foco vira cobrança — inclusive judicial, a execução fiscal. E este é o ponto que muda tudo: o instrumento certo depende da fase. As regras da transação por capacidade de pagamento, por exemplo, mudam conforme o débito esteja em uma ou outra.</p>
+<p><b>Recapitulação (42–53s):</b> Ou seja: tratar "a dívida com o governo" como uma coisa só leva a decisões erradas. A fase define o caminho.</p>
+<p><b>Fecho (53–60s):</b> Saber em que fase está cada débito é o primeiro passo de qualquer estratégia. Antes de decidir, faça um diagnóstico.</p>
+<h4>Legenda</h4><div class="leg">Muita gente trata "a dívida com o governo" como uma coisa só. Não é — e confundir as fases custa caro.
+
+A fase (Receita ou PGFN) define os caminhos possíveis e o instrumento adequado. Entender isso é o começo de qualquer decisão segura.</div>${OAB}`},
+
+j2:{f:'Reels · ~60s',t:'O que é "capacidade de pagamento"',b:`<h4>Roteiro (~60s)</h4>
+<p><b>Gancho (0–3s):</b> "Todo mundo foca no desconto da dívida. Mas o que realmente decide o seu é uma palavra: capacidade."</p>
+<p><b>Contexto (3–15s):</b> Capacidade de pagamento é a análise técnica de quanto a empresa realmente consegue pagar sem inviabilizar a operação. Não é o "quanto eu quero pagar" — é o que os números da empresa sustentam.</p>
+<p><b>Desenvolvimento (15–42s):</b> É essa análise que baliza a transação: define parcelas, prazos e o que é viável dentro das regras do edital. Um acordo montado sem ela costuma parecer bom no primeiro mês — e virar uma conta que estrangula o caixa logo depois. Aí a empresa cai de novo na inadimplência, agora com menos margem para negociar.</p>
+<p><b>Recapitulação (42–53s):</b> Ou seja: a mesma dívida pode gerar um acordo saudável ou um acordo que quebra a empresa. A diferença está nessa conta, feita antes.</p>
+<p><b>Fecho (53–60s):</b> Antes de aceitar qualquer proposta, é a capacidade de pagamento que precisa estar na mesa. Sem ela, é decisão no escuro.</p>
+<h4>Legenda</h4><div class="leg">"Capacidade de pagamento" parece termo técnico distante — mas é o número que decide se a sua transação preserva ou sufoca o caixa.
+
+Entender esse número, no seu caso concreto, é parte do diagnóstico.</div>${OAB}`},
+
+j3:{f:'Reels · ~55s',t:'Edital PGFN nº 6/2026, sem juridiquês',b:`<h4>Roteiro (~55s)</h4>
+<p><b>Gancho (0–3s):</b> "Todo mundo fala do Edital PGFN nº 6. Mas o que ele abre, na prática, para a sua empresa?"</p>
+<p><b>Contexto (3–16s):</b> É uma janela de transação — negociar débitos inscritos na Dívida Ativa da União sob regras específicas. Não é promoção; é um instrumento legal, com critérios.</p>
+<p><b>Desenvolvimento (16–40s):</b> Ele mira, entre outros, débitos de difícil recuperação e situações que passam pela análise de capacidade de pagamento. E tem prazo: a adesão vai até 30 de setembro. Ou seja, é uma oportunidade real — mas com data para fechar e que exige enquadramento técnico caso a caso.</p>
+<p><b>Recapitulação (40–50s):</b> O que ele permite para a sua empresa depende de como cada débito se enquadra. Não é "adere e pronto".</p>
+<p><b>Fecho (50–55s):</b> Saber se a sua empresa se encaixa — e com qual estratégia — começa por um diagnóstico.</p>
+<h4>Legenda</h4><div class="leg">Editais de transação abrem caminhos reais — mas cada um tem regras e prazo. O nº 6/2026 é um deles, com adesão até 30/09.
+
+O que ele permite para a sua empresa depende do enquadramento de cada débito. Entender isso é o primeiro passo.</div>${OAB}`},
+
+j4:{f:'Post de autoridade',t:'O risco do parcelamento no impulso',b:`<h4>Frase-título (arte)</h4><p style="font-family:'Fraunces',serif;font-size:1.15rem;color:var(--navy)">"Parcelar rápido para se livrar da dívida pode criar uma dívida pior."</p>
+<h4>Legenda</h4><div class="leg">O parcelamento convencional é tentador: resolve a urgência de hoje. Mas, montado sem análise de capacidade de pagamento, ele frequentemente consome margem que a empresa não tem — e vira inadimplência de novo lá na frente.
+
+Antes de parcelar, diagnosticar: entender o que cabe no caixa e qual é o instrumento mais adequado para cada débito.</div>${OAB}`},
+
+j5:{f:'Reels · ~55s',t:'Contador e advogado: a dupla',b:`<h4>Roteiro (~55s)</h4>
+<p><b>Gancho (0–3s):</b> "Seu contador é essencial. E, quando a dívida vira Dívida Ativa, ele trabalha melhor com um aliado."</p>
+<p><b>Contexto (3–14s):</b> O contador conhece a empresa por dentro e mantém a regularidade do dia a dia — guias, declarações, o parcelamento ordinário. Esse trabalho é a base de tudo.</p>
+<p><b>Desenvolvimento (14–40s):</b> Só que, quando o débito é inscrito na PGFN e entra no campo da transação e da execução fiscal, o instrumento passa a ser jurídico: laudo de capacidade de pagamento, defesa, negociação sob regras próprias. Não é o contador que "falhou" — é uma outra fase, que exige uma outra ferramenta. É complementaridade, não substituição.</p>
+<p><b>Recapitulação (40–50s):</b> Os dois olhando o mesmo objetivo: manter a empresa regular, apta a contratar e a receber.</p>
+<p><b>Fecho (50–55s):</b> A melhor decisão nasce dessa soma — a visão contábil e a técnica jurídica, juntas.</p>
+<h4>Legenda</h4><div class="leg">Não é advogado no lugar do contador. É a dupla certa para cada fase.
+
+Quando o assunto vira Dívida Ativa e transação, contabilidade e advocacia se somam — pela continuidade da empresa.</div>${OAB}`},
+
+j6:{f:'Post de autoridade',t:'Do diagnóstico ao laudo',b:`<h4>Frase-título (arte)</h4><p style="font-family:'Fraunces',serif;font-size:1.15rem;color:var(--navy)">"Antes de qualquer proposta, um caminho técnico: escuta → análise → laudo."</p>
+<h4>Legenda</h4><div class="leg">Um diagnóstico fiscal não começa pelo desconto — começa pela leitura fria dos dados: quais débitos existem, em que fase estão, o que a empresa suporta pagar.
+
+Desse trabalho nasce o Laudo de Capacidade de Pagamento, a base técnica que orienta a estratégia. É método, não promessa.</div>${OAB}`},
+
+a1:{f:'Reels · ~55s',t:'CND: a certidão que destrava',b:`<h4>Roteiro (~55s)</h4>
+<p><b>Gancho (0–3s):</b> "Sem uma certidão, o contrato não anda. E muita empresa descobre isso tarde demais."</p>
+<p><b>Contexto (3–15s):</b> A Certidão Negativa de Débitos, a CND, prova que a empresa está regular. É exigida em licitações, em contratos com grandes players e até para receber pagamentos — inclusive no setor de óleo e gás.</p>
+<p><b>Desenvolvimento (15–40s):</b> O problema: um único débito inscrito na Dívida Ativa pode travar a emissão dessa certidão. Aí o negócio para — não por falta de trabalho, mas por uma pendência fiscal que ninguém resolveu a tempo. E o efeito é em cascata: contrato suspenso, pagamento retido, renovação barrada.</p>
+<p><b>Recapitulação (40–50s):</b> Regularizar para voltar a emitir certidões é, muitas vezes, o que reabre o caixa da empresa.</p>
+<p><b>Fecho (50–55s):</b> Entender por que a sua empresa não consegue emitir — e o caminho para regularizar — começa por um diagnóstico.</p>
+<h4>Legenda</h4><div class="leg">A CND parece burocracia — até o dia em que ela trava um contrato ou um pagamento.
+
+Entender por que a sua empresa não consegue emitir (e o caminho para regularizar) é uma análise técnica de cada débito pendente.</div>${OAB}`},
+
+a2:{f:'Reels · ~55s',t:'Execução fiscal: o que acontece',b:`<h4>Roteiro (~55s)</h4>
+<p><b>Gancho (0–3s):</b> "Quando a dívida vira processo, o jogo muda de nome — e de consequências. Isso se chama execução fiscal."</p>
+<p><b>Contexto (3–16s):</b> Enquanto o débito está na Dívida Ativa e ninguém age, ele não fica parado: pode ser levado à cobrança judicial. É aí que começa a execução fiscal.</p>
+<p><b>Desenvolvimento (16–40s):</b> Nela, a União busca garantir o pagamento — e isso pode alcançar bens e contas da empresa. Não é algo que "some com o tempo". Ao contrário: ignorar tende a aumentar o valor com encargos e a reduzir as opções de negociação lá na frente. O que era administrativo vira judicial, com menos espaço de manobra.</p>
+<p><b>Recapitulação (40–50s):</b> Quanto mais cedo se entende em que fase está cada débito, mais caminhos existem para agir.</p>
+<p><b>Fecho (50–55s):</b> Depois da citação, o tempo joga contra. Antes dela, ainda há estratégia.</p>
+<h4>Legenda</h4><div class="leg">Execução fiscal não é ameaça de discurso — é a fase em que a dívida vira processo e pode alcançar bens e contas.
+
+Entender onde cada débito está evita ser pego de surpresa. É análise, feita a tempo.</div>${OAB}`},
+
+a3:{f:'Reels · ~55s',t:'Responsabilidade solidária do sócio',b:`<h4>Roteiro (~55s)</h4>
+<p><b>Gancho (0–3s):</b> "A dívida é da empresa. Mas ela pode chegar até você, sócio. Entenda quando."</p>
+<p><b>Contexto (3–16s):</b> Existe a ideia de que a dívida "fica na empresa" e o patrimônio pessoal está sempre protegido. Nem sempre: em situações previstas em lei, a cobrança pode ser redirecionada ao sócio ou ao administrador.</p>
+<p><b>Desenvolvimento (16–42s):</b> Isso costuma envolver pontos específicos — como dissolução irregular da empresa ou determinados atos de gestão — sempre analisados caso a caso. O efeito prático é o que assusta: o patrimônio pessoal pode entrar no radar da cobrança. Por isso, esse não é um risco para descobrir depois que ele já se concretizou.</p>
+<p><b>Recapitulação (42–50s):</b> Saber se — e quando — essa exposição existe no seu caso é parte de um diagnóstico bem feito.</p>
+<p><b>Fecho (50–55s):</b> Prevenir custa menos que remediar. E começa por entender a sua situação.</p>
+<h4>Legenda</h4><div class="leg">Muitos sócios acham que a dívida "fica na empresa". Nem sempre: a lei prevê situações em que a cobrança alcança o patrimônio pessoal.
+
+Entender esse risco no seu caso concreto é análise técnica — e faz parte de um diagnóstico bem feito.</div>${OAB}`},
+
+a4:{f:'Post de autoridade',t:'O Laudo de Capacidade de Pagamento',b:`<h4>Frase-título (arte)</h4><p style="font-family:'Fraunces',serif;font-size:1.15rem;color:var(--navy)">"O documento técnico que define o rumo de uma transação: o Laudo de Capacidade de Pagamento."</p>
+<h4>Legenda</h4><div class="leg">A transação por capacidade de pagamento não se sustenta em "achismo". Ela se apoia num laudo técnico que demonstra, com números, quanto a empresa consegue pagar.
+
+É esse rigor que separa uma negociação bem fundamentada de uma promessa vaga de desconto. Método, não sorte.</div>${OAB}`},
+
+a5:{f:'Reels · ~55s',t:'Macaé e o offshore: cenário fiscal',b:`<h4>Roteiro (~55s)</h4>
+<p><b>Gancho (0–3s):</b> "Em Macaé, regularidade fiscal não é detalhe burocrático — é condição para faturar."</p>
+<p><b>Contexto (3–16s):</b> Quem atende a cadeia de óleo e gás — logística, transporte, serviços, construção — vive de contratos com grandes players e com o poder público. E esses contratos têm uma exigência em comum: certidões em dia.</p>
+<p><b>Desenvolvimento (16–40s):</b> Um único débito inscrito na Dívida Ativa pode barrar uma habilitação, travar a renovação de um contrato ou atrasar um pagamento que já era esperado. Aqui, o passivo tributário não é um problema "do financeiro" — ele mexe direto com a operação e com o caixa da empresa.</p>
+<p><b>Recapitulação (40–50s):</b> No cenário local, estar regular é o que mantém a empresa apta a disputar e a receber.</p>
+<p><b>Fecho (50–55s):</b> Por isso, aqui, diagnosticar o fiscal é cuidar da própria continuidade do negócio.</p>
+<h4>Legenda</h4><div class="leg">No ecossistema de Macaé, a certidão em dia é o que mantém a empresa apta a contratar e receber.
+
+Entender como o seu passivo fiscal afeta essa operação é uma análise específica — e local.</div>${OAB}`},
+
+a6:{f:'Post de autoridade',t:'Portaria RFB 676/2026',b:`<h4>Frase-título (arte)</h4><p style="font-family:'Fraunces',serif;font-size:1.15rem;color:var(--navy)">"Prejuízo fiscal e base negativa de CSLL podem amortizar o principal em transação. Você sabia?"</p>
+<h4>Legenda</h4><div class="leg">A Portaria RFB nº 676/2026 trouxe a possibilidade de usar prejuízo fiscal e base negativa de CSLL para amortizar o principal em transações no contencioso administrativo.
+
+Na prática, é um instrumento técnico a mais — que só faz sentido dentro de uma análise do caso. Entender se ele se aplica à sua empresa é parte do diagnóstico.</div>${OAB}`},
+
+s1:{f:'Reels · ~55s',t:'Edital nº 6: o que checar antes de 30/09',b:`<h4>Roteiro (~55s)</h4>
+<p><b>Gancho (0–3s):</b> "A janela do Edital PGFN nº 6 se aproxima do fim. Se a sua empresa tem passivo, tem coisa para revisar antes de 30/09."</p>
+<p><b>Contexto (3–14s):</b> Chegar preparado a uma data de adesão não é sobre pressa — é sobre organização técnica feita com antecedência. E há três frentes que quase sempre precisam de atenção.</p>
+<p><b>Desenvolvimento (14–42s):</b> Primeiro: mapear os débitos inscritos na Dívida Ativa e a fase em que cada um está. Segundo: verificar o enquadramento nas modalidades do edital — cada uma tem exigências próprias. Terceiro: levantar a capacidade de pagamento, que é a conta que sustenta qualquer proposta. Sem esses três pontos claros, a decisão vira aposta.</p>
+<p><b>Recapitulação (42–50s):</b> A adesão vai até 30 de setembro. Quem chega a essa data com o cenário mapeado decide com consciência — não no susto.</p>
+<p><b>Fecho (50–55s):</b> Revisar isso com calma começa por um diagnóstico.</p>
+<h4>Legenda</h4><div class="leg">Toda janela de transação tem prazo — a do Edital nº 6 fecha em 30/09.
+
+Chegar a essa data com os débitos mapeados e a capacidade de pagamento analisada é o que permite uma decisão consciente, não apressada.</div>${OAB}`},
+
+s2:{f:'Post de autoridade',t:'Sua empresa está regular para certidões?',b:`<h4>Frase-título (arte)</h4><p style="font-family:'Fraunces',serif;font-size:1.15rem;color:var(--navy)">"3 perguntas rápidas: sua empresa consegue emitir CND hoje? Sabe por quê? Sabe o caminho para regularizar?"</p>
+<h4>Legenda</h4><div class="leg">Regularidade fiscal se checa antes de precisar — e não na véspera de um contrato.
+
+Se a resposta a alguma dessas perguntas for "não sei", é sinal de que vale um diagnóstico técnico da sua situação.</div>${OAB}`},
+
+s3:{f:'Reels · ~55s',t:'Transação não é "desconto"',b:`<h4>Roteiro (~55s)</h4>
+<p><b>Gancho (0–3s):</b> "Transação tributária não é 'desconto na dívida'. E tratar como desconto é um erro caro."</p>
+<p><b>Contexto (3–15s):</b> A palavra "desconto" dá a impressão de promoção, de barganha. Mas transação é outra coisa: é um instrumento legal, com requisitos definidos em lei e em cada edital.</p>
+<p><b>Desenvolvimento (15–42s):</b> O eventual abatimento não é um favor comercial — é o resultado técnico de regras aplicadas ao caso concreto, a partir da análise de capacidade de pagamento. Depende da fase do débito, do enquadramento, da situação da empresa. Por isso, quem promete "desconto garantido" está simplificando algo que, na prática, exige análise antes de qualquer número.</p>
+<p><b>Recapitulação (42–50s):</b> A mesma empresa pode ter caminhos muito diferentes — e só a análise revela qual é o dela.</p>
+<p><b>Fecho (50–55s):</b> A diferença entre uma boa transação e uma frustração está no rigor do que vem antes.</p>
+<h4>Legenda</h4><div class="leg">"Transação = desconto" é a simplificação que mais gera decisão ruim.
+
+É análise técnica de legalidade e de capacidade — não promessa. Entender o seu caso é o que define o que é possível.</div>${OAB}`},
+
+s4:{f:'Reels · ~55s',t:'Depois do Edital: quem não aderiu',b:`<h4>Roteiro (~55s)</h4>
+<p><b>Gancho (0–3s):</b> "Perdeu a janela do edital? Calma: ainda há caminhos."</p>
+<p><b>Contexto (3–15s):</b> Editais são oportunidades com prazo — e quando o prazo passa, bate aquela sensação de "agora não tem mais o que fazer". Mas o edital é um instrumento, não o único.</p>
+<p><b>Desenvolvimento (15–42s):</b> Fora da janela, existem outras modalidades de transação e de defesa, que variam conforme a fase de cada débito. O que muda é a estratégia: o mapa de opções se redesenha, e algumas rotas que não faziam sentido dentro do edital passam a fazer. Não aderir a tempo não significa "nada a fazer" — significa reavaliar tecnicamente qual é o melhor caminho a partir de agora.</p>
+<p><b>Recapitulação (42–50s):</b> A dívida não fica sem saída porque um prazo específico passou. Ela pede uma nova leitura.</p>
+<p><b>Fecho (50–55s):</b> E essa leitura começa, de novo, por um diagnóstico.</p>
+<h4>Legenda</h4><div class="leg">Passou o prazo do edital? A dívida não fica sem saída — muda a estratégia.
+
+Fora da janela, o caminho se reavalia caso a caso. O primeiro passo continua o mesmo: diagnosticar.</div>${OAB}`},
+
+s5:{f:'Reels · ~55s',t:'Quando a regularidade fiscal volta',b:`<h4>Roteiro (~55s)</h4>
+<p><b>Gancho (0–3s):</b> "O que muda numa empresa quando a regularidade fiscal volta? Muito mais do que parece."</p>
+<p><b>Contexto (3–14s):</b> Enquanto há pendência, a empresa vive na defensiva: certidão negada, contrato em risco, medo de bloqueio. A energia da gestão vai toda para apagar incêndio.</p>
+<p><b>Desenvolvimento (14–40s):</b> Quando a regularidade volta, o jogo vira: as certidões em dia reabrem licitações e contratos; o caixa deixa de ser refém de pagamentos travados; e a gestão volta a planejar com previsibilidade, em vez de reagir a cada susto. Regularidade não é só "estar em ordem" no papel — é recuperar a capacidade de operar, contratar e crescer.</p>
+<p><b>Recapitulação (40–50s):</b> Ou seja: resolver o passivo não é só tirar um peso — é destravar o próprio potencial da empresa.</p>
+<p><b>Fecho (50–55s):</b> Por isso o passivo tributário é tema de continuidade, não apenas de compliance.</p>
+<h4>Legenda</h4><div class="leg">Regularidade fiscal não é burocracia cumprida — é a empresa voltando a poder contratar, receber e planejar.
+
+Entender o que separa a sua empresa desse ponto é o que um diagnóstico técnico revela.</div>${OAB}`},
+
+s6:{f:'Post de autoridade',t:'Como escolher quem cuida do passivo',b:`<h4>Frase-título (arte)</h4><p style="font-family:'Fraunces',serif;font-size:1.15rem;color:var(--navy)">"Critérios técnicos para escolher quem cuida da sua dívida tributária."</p>
+<h4>Legenda</h4><div class="leg">Alguns sinais de um trabalho sério: começa por <b>diagnóstico</b> (não por promessa de desconto); fundamenta a estratégia em <b>laudo de capacidade de pagamento</b>; explica riscos e caminhos com clareza; e respeita a ética — sem garantir resultado.
+
+Se a conversa começa pelo "quanto você vai economizar", falta a parte técnica. O rigor vem antes do número.</div>${OAB}`},
+
+st1:{f:'Stories · Autoridade',t:'Ensinar em 3 telas',b:`<h4>Roteiro (3 telas)</h4><ol>
+<li><b>Tela 1 (gancho):</b> um conceito técnico da semana em forma de pergunta — ex.: "Você sabe a diferença entre estar na Receita e estar na PGFN?"</li>
+<li><b>Tela 2 (explicação):</b> a resposta em 1 frase clara, conectada ao tema-âncora do feed daquela semana.</li>
+<li><b>Tela 3 (ponte):</b> "Expliquei em detalhe no post de hoje 👉" com o sticker de link para o Reels ou o post de autoridade.</li></ol>
+<p style="font-size:13px;color:var(--muted);margin-top:6px">Função: reforçar autoridade e levar o público do stories para o conteúdo do feed.</p>${OAB}`},
+
+st2:{f:'Stories · Engajamento',t:'Provocar a conversa',b:`<h4>Roteiro (3 telas)</h4><ol>
+<li><b>Tela 1 (enquete):</b> "Dívida tributária some sozinha em 5 anos?" → Sim / Não (ou um "mito × verdade" da semana).</li>
+<li><b>Tela 2 (resposta):</b> revela a resposta técnica correta, sem julgar quem errou — só esclarece.</li>
+<li><b>Tela 3 (caixa de perguntas):</b> "Qual a sua maior dúvida sobre regularização fiscal? Manda aqui." — alimenta os próximos conteúdos.</li></ol>
+<p style="font-size:13px;color:var(--muted);margin-top:6px">Função: gerar interação (sinal forte para o algoritmo) e descobrir as dúvidas reais da audiência.</p>${OAB}`},
+
+st3:{f:'Stories · Conversão',t:'Convidar ao diagnóstico',b:`<h4>Roteiro (3 telas)</h4><ol>
+<li><b>Tela 1 (checklist):</b> "3 perguntas rápidas: sua empresa consegue emitir CND hoje? Sabe por quê? Sabe o caminho para regularizar?"</li>
+<li><b>Tela 2 (reflexão):</b> "Se respondeu 'não sei' a alguma delas, talvez seja hora de um diagnóstico."</li>
+<li><b>Tela 3 (CTA suave):</b> "Entender a sua situação começa por uma conversa técnica." + sticker de link/WhatsApp — sem urgência comercial.</li></ol>
+<p style="font-size:13px;color:var(--muted);margin-top:6px">Função: transformar audiência aquecida em contato qualificado, de forma educativa e dentro da OAB.</p>${OAB}`}
+};
+(function(){
+  const ov=document.getElementById('ov'),bt=document.getElementById('m-title'),bf=document.getElementById('m-fmt'),bb=document.getElementById('m-body');
+  function open(id){const c=COPY[id];if(!c)return;bf.textContent=c.f;bt.textContent=c.t;bb.innerHTML=(TGT[id]?'<div style="font-size:12px;color:var(--bronze-dk);font-weight:600;margin-bottom:16px;letter-spacing:.02em;background:#F3EEE4;border-radius:8px;padding:8px 12px;display:inline-block">🎯 '+TGT[id]+'</div>':'')+c.b;ov.classList.add('on');document.body.style.overflow='hidden';}
+  function close(){ov.classList.remove('on');document.body.style.overflow='';}
+  document.querySelectorAll('.btn-read').forEach(b=>b.addEventListener('click',()=>open(b.dataset.id)));
+  document.getElementById('m-x').addEventListener('click',close);
+  ov.addEventListener('click',e=>{if(e.target===ov)close();});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')close();});
+})();
+</script>
+</body>
+</html>
