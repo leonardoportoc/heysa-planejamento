@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Planejamento de Execução · Heysa Helena</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --ink:#1A2230;--navy:#16233A;--navy-2:#22344F;--bronze:#B08D57;--bronze-dk:#8A6D3F;
+    --paper:#F8F6F1;--card:#FFFFFF;--line:#E7E2D8;--line-2:#EFEBE2;--muted:#5A6472;
+    --ag:#3A4E74;--vc:#8A5A3C;--jt:#3E6B5E;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--paper);color:var(--ink);font-family:'Inter',sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 24px}
+  h1,h2,h3,h4,.serif{font-family:'Fraunces',serif}
+  .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--bronze-dk);font-weight:600;font-family:'Inter',sans-serif}
+
+  .hero{background:linear-gradient(160deg,var(--navy) 0%,#101B2E 100%);color:#EDE7DA;padding:66px 0 58px;position:relative;overflow:hidden}
+  .hero:before{content:"";position:absolute;top:-40%;right:-10%;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(176,141,87,.18),transparent 70%)}
+  .hero .wrap{position:relative}
+  .wordmark{font-family:'Fraunces',serif;font-weight:600;font-size:15px;color:#EDE7DA}
+  .wordmark small{display:block;font-family:'Inter',sans-serif;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--bronze);font-weight:600;margin-top:2px}
+  .hero h1{font-size:clamp(1.9rem,4.2vw,2.9rem);line-height:1.1;font-weight:600;margin:24px 0 12px;color:#fff}
+  .hero h1 em{color:var(--bronze);font-style:italic}
+  .hero .lead{font-size:1.05rem;color:#C9D0DC;max-width:680px}
+  .hero .lead strong{color:#D8B98A;font-weight:600}
+  .hero .period{display:inline-flex;gap:10px;align-items:center;margin-top:24px;font-size:14px;color:#EDE7DA;border:1px solid rgba(176,141,87,.4);border-radius:999px;padding:8px 18px}
+  .hero .period b{color:var(--bronze);font-weight:600}
+
+  section{padding:52px 0;border-bottom:1px solid var(--line)}
+  section:last-of-type{border-bottom:0}
+  .sec-h{margin-bottom:24px}
+  .sec-h h2{font-size:clamp(1.45rem,3vw,1.95rem);font-weight:600;line-height:1.15;margin-top:6px}
+  .sec-h p{color:var(--muted);max-width:730px;margin-top:10px}
+  strong{color:var(--ink);font-weight:600}.muted{color:var(--muted)}.small{font-size:14px}
+
+  .grid{display:grid;gap:16px}.g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:repeat(2,1fr)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:15px;padding:22px}
+  .card h3{font-size:1.06rem;font-weight:600;margin-bottom:7px}
+  .card .ic{width:36px;height:36px;border-radius:9px;background:#F3EEE4;color:var(--bronze-dk);display:flex;align-items:center;justify-content:center;font-weight:700;font-family:'Fraunces',serif;margin-bottom:12px}
+  .card p{font-size:14.5px;color:var(--muted)}
+
+  /* who badges */
+  .who{display:inline-block;font-family:'Inter',sans-serif;font-weight:700;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:#fff;border-radius:6px;padding:3px 9px;vertical-align:middle}
+  .w-ag{background:var(--ag)}.w-vc{background:var(--vc)}.w-jt{background:var(--jt)}
+
+  /* fases */
+  .fase{display:flex;gap:18px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:15px;padding:22px;margin-bottom:14px}
+  .fase .num{flex:0 0 auto;width:44px;height:44px;border-radius:12px;background:linear-gradient(120deg,var(--navy),var(--navy-2));color:var(--bronze);display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-size:1.25rem;font-weight:600}
+  .fase h3{font-size:1.1rem;font-weight:600}
+  .fase .tag{font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--bronze-dk);font-weight:600}
+  .fase p{font-size:14.5px;color:var(--muted);margin-top:4px}
+
+  /* ciclo mensal */
+  .ciclo{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .ci{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;position:relative}
+  .ci .sem{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--bronze-dk);font-weight:700}
+  .ci h4{font-size:1.02rem;margin:5px 0 8px}
+  .ci p{font-size:13.5px;color:var(--muted)}
+  .ci:after{content:"→";position:absolute;right:-14px;top:50%;transform:translateY(-50%);color:var(--bronze);font-size:18px;font-weight:700;z-index:1}
+  .ci:last-child:after{content:"↻";right:10px;top:12px;transform:none;opacity:.5}
+
+  /* esteira semanal */
+  .flow{position:relative;margin-top:8px}
+  .flow:before{content:"";position:absolute;left:21px;top:10px;bottom:10px;width:2px;background:var(--line)}
+  .step{position:relative;display:flex;gap:18px;padding:14px 0}
+  .step .dot{flex:0 0 auto;width:44px;height:44px;border-radius:50%;background:var(--card);border:2px solid var(--bronze);color:var(--navy);display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-weight:600;font-size:1.05rem;z-index:1}
+  .step .bd{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;flex:1}
+  .step h4{font-size:1rem;font-weight:600;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .step p{font-size:14px;color:var(--muted);margin-top:4px}
+
+  /* sua parte */
+  .dever{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--bronze);border-radius:12px;padding:18px 20px;margin-bottom:12px}
+  .dever h4{font-size:1.02rem;font-weight:600;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .dever p{font-size:14px;color:var(--muted);margin-top:5px}
+  .dever .pq{font-size:13px;color:var(--bronze-dk);margin-top:7px;font-weight:500}
+
+  .freq{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .fq{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-align:center}
+  .fq .b{font-family:'Fraunces',serif;font-size:1.9rem;color:var(--navy);font-weight:600;line-height:1.1}
+  .fq .l{font-size:13px;color:var(--muted);margin-top:6px}
+
+  .note{background:#F3EEE4;border:1px solid var(--line);border-radius:14px;padding:16px 18px;font-size:14px;color:var(--ink)}
+  .note b{color:var(--bronze-dk)}
+
+  .legend{display:flex;gap:14px;flex-wrap:wrap;margin-top:14px;font-size:13px;color:var(--muted);align-items:center}
+
+  footer{padding:32px 0;text-align:center;color:var(--muted);font-size:13px}
+  footer .oab{max-width:680px;margin:0 auto 10px;font-size:12.5px}
+
+  @media(max-width:760px){
+    .g3,.g2,.freq{grid-template-columns:1fr}
+    .ciclo{grid-template-columns:1fr}
+    .ci:after{content:"↓";right:auto;left:20px;top:auto;bottom:-16px;transform:none}
+    .ci:last-child:after{content:"↻";left:auto;right:10px;top:12px;bottom:auto}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="wordmark">Heysa Helena de Sales<small>Advocacia Tributária</small></div>
+    <h1>Planejamento de Execução<br><em>como o trabalho acontece</em></h1>
+    <p class="lead">Este documento mostra o motor do projeto: as fases, o ciclo de cada mês, a esteira semanal do conteúdo — e, com destaque, <strong>a parte que depende de você</strong> para tudo andar no ritmo certo.</p>
+    <div class="period">⚙️ <b>Operação contínua</b> · nada é publicado sem a sua aprovação</div>
+  </div>
+</header>
+
+<!-- COMO LER -->
+<section>
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="eyebrow">O princípio</span>
+      <h2>Uma esteira com dois lados</h2>
+      <p>A agência cuida da estratégia, da produção e da distribuição. Você entra em pontos específicos — poucos, mas <strong>insubstituíveis</strong>: é a sua expertise técnica e a sua imagem que sustentam a autoridade, e é a sua aprovação que garante a conformidade com a OAB. Ao longo do documento, cada etapa indica quem executa:</p>
+    </div>
+    <div class="legend">
+      <span class="who w-ag">Agência</span> executa e entrega
+      <span class="who w-vc">Você</span> só você pode fazer
+      <span class="who w-jt">Juntos</span> decisão a dois
+    </div>
+  </div>
+</section>
+
+<!-- FASES -->
+<section>
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="eyebrow">A visão geral</span>
+      <h2>As 3 fases do projeto</h2>
+    </div>
+
+    <div class="fase">
+      <div class="num">1</div>
+      <div>
+        <span class="tag">Agora · Setup</span>
+        <h3>Preparar o terreno <span class="who w-jt">Juntos</span></h3>
+        <p>Contas organizadas, rastreamento instalado no site (para medir cada resultado), página de captura revisada, perfil do Google otimizado e campanhas estruturadas. <strong>Duas liberações suas destravam esta fase</strong> — estão detalhadas na seção "Onde você entra". Concluído em até 10 dias úteis após as liberações.</p>
+      </div>
+    </div>
+
+    <div class="fase">
+      <div class="num">2</div>
+      <div>
+        <span class="tag">Semanas 3–4 · Lançamento</span>
+        <h3>Colocar tudo no ar <span class="who w-ag">Agência</span></h3>
+        <p>Campanhas ativadas, primeiros conteúdos de autoridade publicados (após a sua revisão), presença local rodando. O primeiro mês coleta os números reais que servirão de base para calibrar as metas — sem números inventados.</p>
+      </div>
+    </div>
+
+    <div class="fase">
+      <div class="num">3</div>
+      <div>
+        <span class="tag">Do mês 2 em diante · Regime</span>
+        <h3>O ciclo mensal recorrente <span class="who w-jt">Juntos</span></h3>
+        <p>A operação entra em ritmo: todo mês repete o mesmo ciclo de 4 semanas — planejar, produzir, publicar e otimizar, reportar. É esse ciclo que está detalhado abaixo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CICLO MENSAL -->
+<section>
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="eyebrow">O motor</span>
+      <h2>O ciclo de cada mês</h2>
+      <p>Quatro semanas, quatro movimentos. O mês termina onde o próximo começa — com dados na mesa e decisões tomadas em conjunto.</p>
+    </div>
+    <div class="ciclo">
+      <div class="ci">
+        <span class="sem">Semana 1</span>
+        <h4>Planejar</h4>
+        <p>A agência define os temas do mês (a partir da grade editorial aprovada), o plano de mídia e as prioridades — e envia para a sua leitura.</p>
+      </div>
+      <div class="ci">
+        <span class="sem">Semanas 1–2</span>
+        <h4>Produzir</h4>
+        <p>Roteiros, artes, legendas e anúncios são produzidos e passam pela sua revisão. Você grava os vídeos no seu dia de gravação.</p>
+      </div>
+      <div class="ci">
+        <span class="sem">Semanas 2–4</span>
+        <h4>Publicar &amp; otimizar</h4>
+        <p>Conteúdo aprovado vai ao ar no calendário. As campanhas são acompanhadas e ajustadas semanalmente conforme os números.</p>
+      </div>
+      <div class="ci">
+        <span class="sem">Fim do mês</span>
+        <h4>Reportar</h4>
+        <p>Relatório mensal com os resultados de cada canal + reunião de revisão (~1h) para decidir juntos os ajustes do mês seguinte.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ESTEIRA SEMANAL -->
+<section>
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="eyebrow">O dia a dia</span>
+      <h2>A esteira semanal do conteúdo</h2>
+      <p>Como uma peça sai da ideia e chega ao seu perfil — o caminho que se repete toda semana. Repare que <strong>nenhuma peça é publicada sem passar por você</strong> (etapas 4 e 5).</p>
+    </div>
+
+    <div class="flow">
+      <div class="step">
+        <div class="dot">1</div>
+        <div class="bd">
+          <h4>Pauta &amp; roteiros prontos <span class="who w-ag">Agência</span></h4>
+          <p>Com base na grade editorial aprovada, a agência prepara os roteiros completos da semana (palavra por palavra, com gancho e estrutura — para você não se perder no raciocínio) e envia <strong>com 2 dias de antecedência</strong> do seu dia de gravação.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="dot">2</div>
+        <div class="bd">
+          <h4>Dia de gravação <span class="who w-vc">Você</span></h4>
+          <p>Uma sessão por semana — <strong>sexta-feira</strong>, como você prefere (terça como alternativa) — grava todos os vídeos da semana de uma vez, com iPhone e tripé. Estimativa: <strong>1h30 a 2h</strong>. Depois, envia os arquivos brutos pelo canal combinado.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="dot">3</div>
+        <div class="bd">
+          <h4>Edição &amp; finalização <span class="who w-ag">Agência</span></h4>
+          <p>Corte, legenda, arte, capa e texto de publicação. As peças escritas (cards, stories, posts do Google) são produzidas em paralelo, sem depender da gravação.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="dot">4</div>
+        <div class="bd">
+          <h4>Sua revisão <span class="who w-vc">Você</span></h4>
+          <p>Cada peça finalizada chega para a sua leitura antes de ir ao ar — precisão técnica e conformidade com a OAB. Você aprova, pede ajuste ou veta. <strong>Combinado proposto: retorno em até 2 dias úteis</strong>, para a grade da semana não deslocar.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="dot">5</div>
+        <div class="bd">
+          <h4>Publicação &amp; distribuição <span class="who w-ag">Agência</span></h4>
+          <p>A peça aprovada é publicada no calendário, adaptada para cada canal e conectada às campanhas quando for o caso. Peça não aprovada <strong>não é publicada</strong> — sem exceção.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="dot">6</div>
+        <div class="bd">
+          <h4>Leitura dos números <span class="who w-ag">Agência</span></h4>
+          <p>O desempenho de cada peça e campanha alimenta a otimização da semana seguinte — o que funciona ganha mais espaço, o que não funciona é ajustado.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- A SUA PARTE -->
+<section>
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="eyebrow">O essencial</span>
+      <h2>Onde você entra</h2>
+      <p>São seis momentos pontuais — leves no dia a dia, mas valiosos: é a sua presença neles que dá ritmo e qualidade a tudo o que a agência produz.</p>
+    </div>
+
+    <div class="dever">
+      <h4>1 · Destravar o setup <span class="who w-vc">Você</span> <span class="who" style="background:#A34141">Prioridade nº 1</span></h4>
+      <p>Duas liberações pendentes: <strong>(a)</strong> as credenciais do painel do site e da hospedagem — sem elas não instalamos o rastreamento, e sem rastreamento a mídia roda "às cegas"; <strong>(b)</strong> a criação da conta Google Ads — sem ela não há anúncios na busca do Google.</p>
+      <p class="pq">Por que importa: são as duas únicas travas do cronograma hoje. Liberadas, o setup conclui em até 10 dias úteis.</p>
+    </div>
+
+    <div class="dever">
+      <h4>2 · Gravar 1 dia por semana <span class="who w-vc">Você</span></h4>
+      <p>Sexta-feira (ou terça), com os roteiros que chegam prontos 2 dias antes. Reservar o horário na agenda como compromisso fixo é o que garante a constância — e constância é o que constrói autoridade.</p>
+      <p class="pq">Por que importa: sem gravação, a semana fica sem os vídeos — o formato principal da estratégia.</p>
+    </div>
+
+    <div class="dever">
+      <h4>3 · Revisar e aprovar cada peça <span class="who w-vc">Você</span></h4>
+      <p>Planejamentos mensais e cada peça finalizada passam por você antes de publicar. Proposta de combinado: <strong>retorno em até 2 dias úteis</strong> (um "aprovado" simples basta; ajustes, quando houver, direto no ponto).</p>
+      <p class="pq">Por que importa: é a sua garantia de conformidade com a OAB — e o prazo de retorno é o que mantém o calendário de publicação em dia.</p>
+    </div>
+
+    <div class="dever">
+      <h4>4 · Emprestar a expertise <span class="who w-vc">Você</span></h4>
+      <p>Responder dúvidas técnicas pontuais que surgem na produção, validar a precisão jurídica dos conteúdos e avisar a agência quando surgir novidade relevante (edital, portaria, decisão) que mereça virar pauta.</p>
+      <p class="pq">Por que importa: o conteúdo só tem valor se estiver tecnicamente impecável — e isso só você garante.</p>
+    </div>
+
+    <div class="dever">
+      <h4>5 · Atender os contatos que chegarem <span class="who w-vc">Você</span></h4>
+      <p>O marketing gera o contato qualificado; a reunião de alinhamento e o diagnóstico são com você, no seu método. Importa também <strong>nos contar o desfecho</strong>: quais contatos viraram reunião, quais viraram diagnóstico.</p>
+      <p class="pq">Por que importa: esse retorno é o que calibra as campanhas para trazer mais do perfil certo — e menos do errado.</p>
+    </div>
+
+    <div class="dever">
+      <h4>6 · Reunião mensal de revisão <span class="who w-jt">Juntos</span></h4>
+      <p>Uma hora por mês para ler os resultados, decidir os ajustes e aprovar a direção do mês seguinte.</p>
+      <p class="pq">Por que importa: é onde a estratégia se corrige com dados — e onde você mantém o controle da direção.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DEDICAÇÃO -->
+<section>
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="eyebrow">Em números</span>
+      <h2>Quanto tempo isso pede de você</h2>
+      <p>Estimativa honesta da sua dedicação em regime normal — concentrada em blocos previsíveis, não espalhada pelo dia.</p>
+    </div>
+    <div class="freq">
+      <div class="fq"><div class="b">1h30–2h</div><div class="l">gravação · 1 sessão fixa por semana</div></div>
+      <div class="fq"><div class="b">~40min</div><div class="l">revisões e aprovações por semana</div></div>
+      <div class="fq"><div class="b">1h</div><div class="l">reunião de revisão · 1x por mês</div></div>
+    </div>
+    <div class="note" style="margin-top:16px">Total aproximado: <b>~3 horas por semana</b>, em blocos agendados. O atendimento aos contatos gerados não entra nessa conta — esse é o seu ofício, e é para ele que tudo isso existe.</div>
+  </div>
+</section>
+
+<!-- COMUNICAÇÃO -->
+<section>
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="eyebrow">Os canais</span>
+      <h2>Como nos falamos</h2>
+    </div>
+    <div class="grid g3">
+      <div class="card">
+        <div class="ic">💬</div>
+        <h3>Dia a dia · WhatsApp</h3>
+        <p>Envio de roteiros e peças para revisão, suas aprovações, envio dos vídeos brutos e avisos rápidos dos dois lados.</p>
+      </div>
+      <div class="card">
+        <div class="ic">📄</div>
+        <h3>Documentos · como este</h3>
+        <p>Planejamentos, grades editoriais e relatórios chegam como documentos organizados, para leitura com calma e registro do que foi combinado.</p>
+      </div>
+      <div class="card">
+        <div class="ic">📊</div>
+        <h3>Resultados · mensal</h3>
+        <p>Relatório mensal com os números de cada canal + reunião de revisão para decidir os próximos passos juntos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OAB -->
+<section>
+  <div class="wrap">
+    <div class="note">
+      <b>Régua OAB — o princípio que atravessa tudo.</b> Toda a comunicação é informativa e educativa (Provimento 205/2021): sem promessa de resultado, sem casos concretos, sem apelo comercial. O fluxo acima existe justamente para garantir isso na prática: <b>nenhuma peça é publicada sem a sua revisão e aprovação.</b> Em caso de dúvida sobre qualquer conteúdo, a regra é uma só: não publica.
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="oab">Comunicação em conformidade com o Provimento 205/2021 (OAB): conteúdo estritamente informativo e educativo, sem promessa de resultado, sem oferta comercial. Os combinados de prazo propostos neste documento serão ajustados em conjunto na reunião de alinhamento.</p>
+    <p>Marketing Growth Digital · mktgrowthdigital.com</p>
+  </div>
+</footer>
+
+</body>
+</html>

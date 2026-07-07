@@ -32,7 +32,7 @@
   h1 em{color:var(--bronze);font-style:italic}
   .sub{font-size:1.08rem;color:#C9D0DC}
 
-  .cards{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
   .doc{display:flex;flex-direction:column;background:rgba(255,255,255,.04);border:1px solid rgba(176,141,87,.28);border-radius:18px;padding:30px 28px;text-decoration:none;color:inherit;transition:transform .2s ease,border-color .2s ease,background .2s ease}
   .doc:hover{transform:translateY(-4px);border-color:var(--bronze);background:rgba(255,255,255,.07)}
   .doc .num{font-family:'Fraunces',serif;font-size:13px;letter-spacing:.14em;color:var(--bronze);font-weight:600;margin-bottom:16px}
@@ -49,8 +49,10 @@
   footer{padding:26px 0;border-top:1px solid rgba(255,255,255,.08);font-size:12.5px;color:#7E8899;text-align:center}
   footer b{color:var(--bronze);font-weight:600}
 
-  @media(max-width:720px){
+  @media(max-width:860px){
     .cards{grid-template-columns:1fr}
+  }
+  @media(max-width:720px){
     main{padding:44px 0}
   }
 </style>
@@ -65,7 +67,7 @@
     <div class="lead-block">
       <span class="eyebrow">Preparado para Dra. Heysa Helena de Sales</span>
       <h1>O ponto de partida da sua<br><em>comunicação</em> e autoridade</h1>
-      <p class="sub">Dois documentos que definem <strong style="color:#EDE7DA">como falamos</strong> e <strong style="color:#EDE7DA">o que publicamos</strong> nos próximos três meses — para a sua leitura e aprovação.</p>
+      <p class="sub">Três documentos que definem <strong style="color:#EDE7DA">como falamos</strong>, <strong style="color:#EDE7DA">o que publicamos</strong> e <strong style="color:#EDE7DA">como o trabalho acontece</strong> — para a sua leitura e aprovação.</p>
     </div>
 
     <div class="cards">
@@ -78,10 +80,18 @@
       </a>
 
       <a class="doc" href="plano-conteudo-heysa.html">
-        <div class="num">02 · A execução</div>
+        <div class="num">02 · O conteúdo</div>
         <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg></div>
         <h2>Planejamento de Conteúdo</h2>
         <p>Pilares, formatos, cadência semanal e a grade de temas mês a mês (Jul–Set) — com cada peça pronta para ler.</p>
+        <span class="go">Abrir documento <span class="arw">→</span></span>
+      </a>
+
+      <a class="doc" href="plano-execucao-heysa.html">
+        <div class="num">03 · A operação</div>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg></div>
+        <h2>Planejamento de Execução</h2>
+        <p>O fluxo do trabalho na prática: as fases, o ciclo mensal, a esteira semanal do conteúdo e onde você entra.</p>
         <span class="go">Abrir documento <span class="arw">→</span></span>
       </a>
     </div>
