@@ -107,6 +107,26 @@
   footer{padding:32px 0;text-align:center;color:var(--muted);font-size:13px}
   footer .oab{max-width:680px;margin:0 auto 10px;font-size:12.5px}
 
+  /* STORIES — semanas e ações */
+  .wkblock{margin-bottom:26px;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--card)}
+  .wkhead{background:linear-gradient(100deg,var(--navy),var(--navy-2));color:#fff;padding:16px 22px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+  .wkhead .wn{font-family:'Fraunces',serif;font-size:1.5rem;font-weight:600;color:var(--bronze);line-height:1}
+  .wkhead h3{font-size:1.05rem;color:#fff;margin:0}
+  .wkhead .anchor{font-size:12px;color:#C9D0DC;margin-left:auto}
+  .acoes{display:grid;grid-template-columns:repeat(3,1fr);gap:0}
+  .acao{padding:20px;border-right:1px solid var(--line)}
+  .acao:last-child{border-right:0}
+  .acao .dia{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#fff;background:var(--bronze-dk);border-radius:5px;padding:3px 9px;margin-bottom:9px}
+  .acao .mec{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-bottom:3px}
+  .acao h4{font-size:1rem;font-weight:600;margin-bottom:10px;line-height:1.25}
+  .acao ol{margin:0 0 10px 16px;padding:0}
+  .acao ol li{font-size:13px;color:var(--ink);margin-bottom:7px;line-height:1.45}
+  .acao ol li b{color:var(--navy)}
+  .acao .cta{background:#F3EEE4;border-radius:8px;padding:9px 11px;font-size:12.5px;color:var(--ink);margin-top:auto}
+  .acao .cta b{color:var(--bronze-dk);display:block;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:3px}
+  .acao .own{margin-top:9px;font-size:11.5px;color:var(--muted)}
+
+  @media(max-width:860px){.acoes{grid-template-columns:1fr}.acao{border-right:0;border-bottom:1px solid var(--line)}.acao:last-child{border-bottom:0}}
   @media(max-width:760px){.g2,.g3,.split,.freq,.weeks{grid-template-columns:1fr}.wk:after{content:"↓";right:auto;left:16px;top:auto;bottom:-14px;transform:none}}
 </style>
 </head>
@@ -132,7 +152,7 @@
     <div class="freq">
       <div class="fq"><div class="b">4</div><div class="l">vídeos para você gravar<br><span style="font-size:11px">1 por semana, ou tudo de uma vez</span></div></div>
       <div class="fq"><div class="b">4</div><div class="l">clipes de story (~15s)<br><span style="font-size:11px">gravados na mesma sessão</span></div></div>
-      <div class="fq"><div class="b">12</div><div class="l">stories no mês<br><span style="font-size:11px">3/semana — agência monta</span></div></div>
+      <div class="fq"><div class="b">12</div><div class="l">ações de stories<br><span style="font-size:11px">3/semana · ter · qui · sex</span></div></div>
       <div class="fq"><div class="b">2</div><div class="l">posts de autoridade<br><span style="font-size:11px">arte + texto, 100% agência</span></div></div>
     </div>
 
@@ -435,62 +455,202 @@
   <div class="wrap">
     <div class="sec-h">
       <span class="eyebrow">O dia a dia do perfil</span>
-      <h2>A sequência de stories de julho</h2>
-      <p>3 stories por semana, sempre <strong>ancorados no tema do vídeo daquela semana</strong> — um puxa autoridade, um gera conversa, um convida ao diagnóstico. A maior parte a agência monta. <strong>O que depende de você são 2 coisas por semana</strong>, e as duas são rápidas.</p>
+      <h2>Os stories: 3 ações por semana</h2>
+      <p>Não são 3 stories soltos — são <strong>3 ações estratégicas por semana, em dias diferentes</strong>. Cada ação é uma sequência de telas com função clara, e todas puxam o tema do vídeo daquela semana. A mecânica muda a cada dia, para o perfil não ficar repetitivo.</p>
+      <p style="margin-top:10px">O ritmo se repete toda semana: <strong>terça constrói autoridade · quinta gera conversa · sexta convida ao diagnóstico.</strong></p>
     </div>
 
-    <div class="split" style="margin-bottom:22px">
+    <div class="split" style="margin-bottom:26px">
       <div class="splitcard vc">
         <span class="who w-vc">Você faz</span>
-        <h3>2 ações por semana</h3>
+        <h3>Só 2 coisas por semana</h3>
         <ul>
-          <li><strong>1 clipe curto de ~15s</strong> (story de autoridade) — grave no mesmo dia da gravação do vídeo, logo depois, com o tripé já montado. São 4 clipes no mês, um por semana.</li>
-          <li><strong>Responder a caixa de perguntas</strong> — quando chegarem as dúvidas reais da audiência, você escolhe 1 ou 2 e responde (pode ser em texto ou num story rápido).</li>
+          <li><strong>1 clipe de ~15s</strong> (a ação de terça) — os 4 do mês são gravados na <b>mesma sessão dos vídeos</b>, com o tripé já montado. ~5 min a mais no total.</li>
+          <li><strong>Responder a caixa de perguntas</strong> (semanas 2 e 4) — você escolhe 1 ou 2 dúvidas e responde. Pode ser em texto.</li>
         </ul>
       </div>
       <div class="splitcard ag">
         <span class="who w-ag">Agência faz</span>
         <h3>Todo o resto</h3>
         <ul>
-          <li>Artes, cards, enquetes e checklists</li>
+          <li>Todas as artes, enquetes, quizzes e cards</li>
           <li>Recortes do seu vídeo da semana</li>
-          <li>Publicação no horário certo</li>
-          <li>Entrega do material da isca ("Comente EDITAL") a quem comentar</li>
+          <li>Publicação nos dias e horários certos</li>
+          <li>Entrega do material da isca a quem pedir</li>
         </ul>
       </div>
     </div>
 
-    <table>
-      <thead><tr><th style="width:15%">Semana</th><th>Story 1 · Autoridade</th><th>Story 2 · Engajamento</th><th>Story 3 · Conversão</th></tr></thead>
-      <tbody>
-        <tr>
-          <td class="tt"><b>Semana 1</b><br><span class="muted small">Tema: RFB × PGFN</span></td>
-          <td class="muted small">🎥 <b>Clipe seu (~15s):</b> "Receita e PGFN não são a mesma cobrança — e a fase define o caminho." → leva ao Reels.</td>
-          <td class="muted small">📊 Enquete: <i>"Dívida na Receita e dívida na PGFN são a mesma coisa?"</i> Sim / Não → tela seguinte revela a resposta técnica.</td>
-          <td class="muted small">✅ Card: <i>"Você sabe em que fase está cada débito da sua empresa?"</i> + convite ao diagnóstico (link/WhatsApp).</td>
-        </tr>
-        <tr>
-          <td class="tt"><b>Semana 2</b><br><span class="muted small">Tema: Capacidade de pagamento</span></td>
-          <td class="muted small">🎥 <b>Clipe seu (~15s):</b> "O que decide sua transação não é o desconto — é o que a sua empresa consegue pagar."</td>
-          <td class="muted small">💬 <b>Caixa de perguntas:</b> <i>"Qual a sua maior dúvida sobre negociar dívida tributária?"</i> → <b>você escolhe 1–2 e responde.</b> Alimenta os conteúdos do mês seguinte.</td>
-          <td class="muted small">✅ Card: <i>"Antes de assinar qualquer proposta, esse número precisa estar na mesa."</i> + convite ao diagnóstico.</td>
-        </tr>
-        <tr>
-          <td class="tt"><b>Semana 3</b><br><span class="muted small">Tema: Edital PGFN nº 6</span></td>
-          <td class="muted small">🎥 <b>Clipe seu (~15s):</b> "A adesão vai até 30/09 — mas o enquadramento não se resolve na véspera."</td>
-          <td class="muted small">⚖️ Mito × Verdade: <i>"O Edital é um desconto para qualquer empresa."</i> → MITO. Card explica: são critérios técnicos, caso a caso.</td>
-          <td class="muted small">✅ Card: <i>"Comente EDITAL e receba o resumo das modalidades"</i> — repescagem da isca do Reels da semana.</td>
-        </tr>
-        <tr>
-          <td class="tt"><b>Semana 4</b><br><span class="muted small">Tema: Edital × individual</span></td>
-          <td class="muted small">🎥 <b>Clipe seu (~15s):</b> "Existem duas portas para negociar uma dívida alta. E nem sempre a do edital é a sua."</td>
-          <td class="muted small">📊 Enquete: <i>"Você sabia que existe transação fora do edital, sem prazo?"</i> Sim / Não → revela a via individual.</td>
-          <td class="muted small">✅ Card de fechamento do mês: <i>"Antes de pagar ou parcelar, faça um diagnóstico."</i> + convite.</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="wkblock">
+      <div class="wkhead"><div class="wn">01</div><h3>Semana 1</h3><span class="anchor">Tema-âncora: RFB × PGFN — quem cobra o quê</span></div>
+      <div class="acoes">
+        <div class="acao">
+          <span class="dia">Terça</span>
+          <div class="mec">Ação 1 · Autoridade</div>
+          <h4>Ensinar em 3 telas</h4>
+          <ol>
+            <li><b>Tela 1 — pergunta:</b> "Você sabe a diferença entre dever para a Receita e dever para a PGFN?" <span class="muted">(card)</span></li>
+            <li><b>Tela 2 — 🎥 clipe seu (~15s):</b> "Não é a mesma cobrança. Enquanto está na Receita, ainda dá para revisar. Quando vai para a PGFN, vira cobrança — inclusive judicial. A fase define o caminho."</li>
+            <li><b>Tela 3 — ponte:</b> "Expliquei em detalhe no vídeo de hoje." <span class="muted">(sticker de link para o Reels)</span></li>
+          </ol>
+          <div class="cta"><b>CTA</b>Assista ao vídeo completo 👉 <span class="muted">(link para o Reels)</span></div>
+          <div class="own"><span class="who w-vc">Você</span> grava a tela 2 · <span class="who w-ag">Agência</span> monta o resto</div>
+        </div>
+        <div class="acao">
+          <span class="dia">Quinta</span>
+          <div class="mec">Ação 2 · Engajamento</div>
+          <h4>Enquete + revelação</h4>
+          <ol>
+            <li><b>Tela 1 — enquete:</b> "Dívida na Receita e dívida na PGFN são a mesma coisa?" → <b>Sim / Não</b></li>
+            <li><b>Tela 2 — resultado:</b> mostra o placar e revela: "São fases diferentes — e cada uma abre caminhos diferentes."</li>
+            <li><b>Tela 3 — o custo do erro:</b> "Tratar como a mesma coisa faz a empresa escolher o instrumento errado — e perder margem de negociação."</li>
+          </ol>
+          <div class="cta"><b>CTA</b>Sem CTA comercial — o objetivo é <b>gerar interação</b> e esclarecer.</div>
+          <div class="own"><span class="who w-ag">Agência</span> monta e publica</div>
+        </div>
+        <div class="acao">
+          <span class="dia">Sexta</span>
+          <div class="mec">Ação 3 · Conversão</div>
+          <h4>Checklist de 3 perguntas</h4>
+          <ol>
+            <li><b>Tela 1:</b> "3 perguntas rápidas sobre o passivo da sua empresa 👇"</li>
+            <li><b>Tela 2 — checklist:</b> "1. Sabe quantos débitos tem? 2. Sabe em que fase está cada um? 3. Sabe o que cada fase permite?"</li>
+            <li><b>Tela 3 — constatação:</b> "Se respondeu 'não sei' a alguma delas, é sinal de que falta um diagnóstico."</li>
+          </ol>
+          <div class="cta"><b>CTA</b>"Entender a sua situação começa por uma conversa técnica." <span class="muted">(link/WhatsApp — sem urgência)</span></div>
+          <div class="own"><span class="who w-ag">Agência</span> monta e publica</div>
+        </div>
+      </div>
+    </div>
 
-    <div class="note" style="margin-top:16px"><b>Dica prática:</b> grave os <b>4 clipes de story</b> na mesma sessão dos vídeos — com o tripé montado e a luz já ajustada, são ~5 minutos a mais no total. Assim você não precisa voltar a gravar durante o mês, e a agência tem material pra sustentar o perfil nas 4 semanas.</div>
+    <div class="wkblock">
+      <div class="wkhead"><div class="wn">02</div><h3>Semana 2</h3><span class="anchor">Tema-âncora: Capacidade de pagamento</span></div>
+      <div class="acoes">
+        <div class="acao">
+          <span class="dia">Terça</span>
+          <div class="mec">Ação 1 · Autoridade</div>
+          <h4>O erro que eu mais vejo</h4>
+          <ol>
+            <li><b>Tela 1 — gancho:</b> "A pergunta errada que quase todo empresário me faz." <span class="muted">(card)</span></li>
+            <li><b>Tela 2 — 🎥 clipe seu (~15s):</b> "'Quanto de desconto eu consigo?' Essa é a pergunta errada. O que decide a sua transação não é o desconto — é quanto a sua empresa realmente consegue pagar sem inviabilizar a operação."</li>
+            <li><b>Tela 3 — ponte:</b> "Expliquei o porquê no vídeo de hoje." <span class="muted">(link para o Reels)</span></li>
+          </ol>
+          <div class="cta"><b>CTA</b>Assista ao vídeo completo 👉</div>
+          <div class="own"><span class="who w-vc">Você</span> grava a tela 2 · <span class="who w-ag">Agência</span> monta o resto</div>
+        </div>
+        <div class="acao">
+          <span class="dia">Quinta</span>
+          <div class="mec">Ação 2 · Engajamento</div>
+          <h4>Caixa de perguntas</h4>
+          <ol>
+            <li><b>Tela 1 — convite:</b> "Qual a sua maior dúvida sobre negociar dívida tributária?" <span class="muted">(sticker de caixa de perguntas)</span></li>
+            <li><b>Tela 2 — reforço:</b> "Pode perguntar sem medo. Respondo as principais aqui."</li>
+            <li><b>Telas 3+ — 💬 suas respostas:</b> <b>você escolhe 1 ou 2 perguntas e responde</b> (texto sobre a print da pergunta, ou clipe rápido — como preferir).</li>
+          </ol>
+          <div class="cta"><b>CTA</b>Sem CTA comercial. Ganho duplo: <b>interação forte</b> + você descobre as dúvidas reais da audiência (que viram conteúdo depois).</div>
+          <div class="own"><span class="who w-vc">Você</span> responde · <span class="who w-ag">Agência</span> monta e publica</div>
+        </div>
+        <div class="acao">
+          <span class="dia">Sexta</span>
+          <div class="mec">Ação 3 · Conversão</div>
+          <h4>O contraste da decisão</h4>
+          <ol>
+            <li><b>Tela 1 — cenário A:</b> "Empresa que aceita a proposta sem analisar: parece bom no 1º mês… e estrangula o caixa no 3º."</li>
+            <li><b>Tela 2 — cenário B:</b> "Empresa que faz a conta antes: negocia dentro do que sustenta — e mantém o fôlego."</li>
+            <li><b>Tela 3 — a diferença:</b> "A dívida é a mesma. O que muda é a análise feita antes de assinar."</li>
+          </ol>
+          <div class="cta"><b>CTA</b>"Antes de aceitar qualquer proposta, esse número precisa estar na mesa." <span class="muted">(link/WhatsApp)</span></div>
+          <div class="own"><span class="who w-ag">Agência</span> monta e publica</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wkblock">
+      <div class="wkhead"><div class="wn">03</div><h3>Semana 3</h3><span class="anchor">Tema-âncora: Edital PGFN nº 6/2026</span></div>
+      <div class="acoes">
+        <div class="acao">
+          <span class="dia">Terça</span>
+          <div class="mec">Ação 1 · Autoridade</div>
+          <h4>O alerta do prazo</h4>
+          <ol>
+            <li><b>Tela 1 — dado:</b> "Edital PGFN nº 6 — adesão até 30 de setembro." <span class="muted">(card sóbrio, sem urgência comercial)</span></li>
+            <li><b>Tela 2 — 🎥 clipe seu (~15s):</b> "Sim, tem prazo. Mas o ponto que quase ninguém comenta é outro: o enquadramento não se resolve na véspera. Ele depende de análise, documento e número."</li>
+            <li><b>Tela 3 — ponte:</b> "Expliquei o edital sem juridiquês no vídeo de hoje." <span class="muted">(link para o Reels)</span></li>
+          </ol>
+          <div class="cta"><b>CTA</b>Assista ao vídeo completo 👉</div>
+          <div class="own"><span class="who w-vc">Você</span> grava a tela 2 · <span class="who w-ag">Agência</span> monta o resto</div>
+        </div>
+        <div class="acao">
+          <span class="dia">Quinta</span>
+          <div class="mec">Ação 2 · Engajamento</div>
+          <h4>Quiz: Mito × Verdade</h4>
+          <ol>
+            <li><b>Tela 1:</b> "O Edital dá desconto para qualquer empresa." → <b>Mito ou Verdade?</b> <span class="muted">(enquete)</span></li>
+            <li><b>Tela 2 — resposta:</b> "MITO. São critérios técnicos, avaliados caso a caso."</li>
+            <li><b>Tela 3:</b> "Duas empresas com a mesma dívida podem ter caminhos diferentes no mesmo edital." → <b>Mito ou Verdade?</b></li>
+            <li><b>Tela 4 — resposta:</b> "VERDADE. O que muda é o enquadramento de cada débito."</li>
+          </ol>
+          <div class="cta"><b>CTA</b>Sem CTA comercial — <b>quiz de 2 rodadas</b> para segurar a audiência e corrigir a crença errada.</div>
+          <div class="own"><span class="who w-ag">Agência</span> monta e publica</div>
+        </div>
+        <div class="acao">
+          <span class="dia">Sexta</span>
+          <div class="mec">Ação 3 · Conversão</div>
+          <h4>A isca do material</h4>
+          <ol>
+            <li><b>Tela 1:</b> "Preparei um resumo com as modalidades do Edital nº 6 e os critérios de cada uma."</li>
+            <li><b>Tela 2 — o que tem dentro:</b> "Quais débitos entram · o que cada modalidade exige · o que analisar antes de decidir."</li>
+            <li><b>Tela 3 — como pegar:</b> "É gratuito e informativo. Me manda a palavra <b>EDITAL</b> aqui." <span class="muted">(caixa de resposta / link WhatsApp)</span></li>
+          </ol>
+          <div class="cta"><b>CTA</b>"Manda <b>EDITAL</b> e eu te envio o material." <span class="muted">— entrega de informação, não oferta de serviço (por isso cabe na régua da OAB).</span></div>
+          <div class="own"><span class="who w-ag">Agência</span> monta, publica e entrega o material</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wkblock">
+      <div class="wkhead"><div class="wn">04</div><h3>Semana 4</h3><span class="anchor">Tema-âncora: Edital × transação individual</span></div>
+      <div class="acoes">
+        <div class="acao">
+          <span class="dia">Terça</span>
+          <div class="mec">Ação 1 · Autoridade</div>
+          <h4>As duas portas</h4>
+          <ol>
+            <li><b>Tela 1 — gancho:</b> "Existem duas portas para negociar uma dívida alta. E nem sempre a do edital é a sua." <span class="muted">(card)</span></li>
+            <li><b>Tela 2 — 🎥 clipe seu (~15s):</b> "Para dívidas a partir de R$ 1 milhão existe a transação individual: sem prazo de edital, moldada ao caso. E é uma via que, via de regra, foge do alcance do trabalho contábil."</li>
+            <li><b>Tela 3 — ponte:</b> "Comparei as duas no vídeo de hoje." <span class="muted">(link para o Reels)</span></li>
+          </ol>
+          <div class="cta"><b>CTA</b>Assista ao vídeo completo 👉</div>
+          <div class="own"><span class="who w-vc">Você</span> grava a tela 2 · <span class="who w-ag">Agência</span> monta o resto</div>
+        </div>
+        <div class="acao">
+          <span class="dia">Quinta</span>
+          <div class="mec">Ação 2 · Engajamento</div>
+          <h4>Enquete + caixa aberta</h4>
+          <ol>
+            <li><b>Tela 1 — enquete:</b> "Você sabia que existe transação fora do edital, sem prazo de adesão?" → <b>Sim / Não</b></li>
+            <li><b>Tela 2 — revelação:</b> "É a transação individual. Para dívidas maiores, muitas vezes é o caminho mais vantajoso — e pouca gente trabalha com ela."</li>
+            <li><b>Tela 3 — 💬 caixa de perguntas:</b> "Ficou alguma dúvida sobre os dois caminhos? Manda aqui." → <b>você responde 1 ou 2.</b></li>
+          </ol>
+          <div class="cta"><b>CTA</b>Sem CTA comercial — enquete + caixa aberta para fechar o mês ouvindo a audiência.</div>
+          <div class="own"><span class="who w-vc">Você</span> responde · <span class="who w-ag">Agência</span> monta e publica</div>
+        </div>
+        <div class="acao">
+          <span class="dia">Sexta</span>
+          <div class="mec">Ação 3 · Conversão</div>
+          <h4>Recapitulação do mês</h4>
+          <ol>
+            <li><b>Tela 1:</b> "O que vimos em julho: as fases da dívida · a capacidade de pagamento · o edital · a transação individual."</li>
+            <li><b>Tela 2 — o fio condutor:</b> "Quatro temas, uma conclusão só: <b>a decisão certa depende de análise, não de desconto.</b>"</li>
+            <li><b>Tela 3 — convite:</b> "Antes de pagar ou parcelar, faça um diagnóstico."</li>
+          </ol>
+          <div class="cta"><b>CTA</b>"Se a sua empresa tem passivo tributário, o primeiro passo é entender o cenário." <span class="muted">(link/WhatsApp)</span></div>
+          <div class="own"><span class="who w-ag">Agência</span> monta e publica</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="note"><b>Por que essa ordem funciona:</b> terça você <b>ensina</b> (constrói autoridade e leva ao Reels) · quinta você <b>ouve</b> (a interação é o sinal mais forte para o alcance, e as dúvidas viram conteúdo) · sexta você <b>convida</b> (a audiência já entendeu o problema — o convite chega como consequência natural, não como venda).</div>
   </div>
 </section>
 
