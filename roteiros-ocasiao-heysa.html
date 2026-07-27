@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Roteiros de Ocasião · Heysa Helena</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --ink:#1A2230;--navy:#16233A;--navy-2:#22344F;--bronze:#B08D57;--bronze-dk:#8A6D3F;
+    --paper:#F8F6F1;--card:#FFFFFF;--line:#E7E2D8;--line-2:#EFEBE2;--muted:#5A6472;
+    --vc:#8A5A3C;--ag:#3A4E74;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--paper);color:var(--ink);font-family:'Inter',sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 24px}
+  h1,h2,h3,h4,.serif{font-family:'Fraunces',serif}
+  .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--bronze-dk);font-weight:600}
+
+  .hero{background:linear-gradient(160deg,var(--navy) 0%,#101B2E 100%);color:#EDE7DA;padding:60px 0 52px;position:relative;overflow:hidden}
+  .hero:before{content:"";position:absolute;top:-40%;right:-10%;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(176,141,87,.18),transparent 70%)}
+  .hero .wrap{position:relative}
+  .wordmark{font-family:'Fraunces',serif;font-weight:600;font-size:15px;color:#EDE7DA}
+  .wordmark small{display:block;font-family:'Inter',sans-serif;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--bronze);font-weight:600;margin-top:2px}
+  .hero h1{font-size:clamp(1.9rem,4.2vw,2.8rem);line-height:1.1;font-weight:600;margin:22px 0 12px;color:#fff}
+  .hero h1 em{color:var(--bronze);font-style:italic}
+  .hero .lead{font-size:1.05rem;color:#C9D0DC;max-width:680px}
+
+  section{padding:48px 0;border-bottom:1px solid var(--line)}
+  section:last-of-type{border-bottom:0}
+  .sec-h{margin-bottom:22px}
+  .sec-h h2{font-size:clamp(1.4rem,3vw,1.9rem);font-weight:600;line-height:1.15;margin-top:6px}
+  .sec-h p{color:var(--muted);max-width:760px;margin-top:10px}
+  strong{color:var(--ink);font-weight:600}.muted{color:var(--muted)}.small{font-size:14px}
+
+  .who{display:inline-block;font-family:'Inter',sans-serif;font-weight:700;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:#fff;border-radius:6px;padding:3px 9px;vertical-align:middle}
+  .w-vc{background:var(--vc)}.w-ag{background:var(--ag)}
+
+  .principle{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--bronze);border-radius:12px;padding:20px 24px}
+  .principle h3{font-size:1.1rem;margin-bottom:8px}
+  .principle p{font-size:14.5px;color:var(--muted)}
+
+  .oab{background:#FBF0E6;border:1px solid #E8C9A8;border-radius:14px;padding:20px 24px}
+  .oab h3{font-size:1.05rem;color:#8A4B1F;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+  .oab ul{list-style:none;display:grid;gap:8px}
+  .oab li{position:relative;padding-left:24px;font-size:14px;color:var(--ink)}
+  .oab li:before{content:"✕";position:absolute;left:0;color:#B5482A;font-weight:700}
+  .oab li.ok:before{content:"✓";color:#3E6B5E}
+
+  /* roteiro block */
+  .rot{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-bottom:26px}
+  .rot-h{background:linear-gradient(100deg,var(--navy),var(--navy-2));color:#fff;padding:20px 24px}
+  .rot-h .when{font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--bronze);font-weight:700}
+  .rot-h h3{font-size:1.3rem;color:#fff;margin-top:4px}
+  .rot-h p{font-size:13.5px;color:#C9D0DC;margin-top:6px}
+  .rot-b{padding:22px 24px}
+  .rot-b h4{font-family:'Inter',sans-serif;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--bronze-dk);font-weight:700;margin:22px 0 10px;padding-bottom:6px;border-bottom:1px solid var(--line-2)}
+  .rot-b h4:first-child{margin-top:0}
+
+  .why{background:#F3EEE4;border-radius:10px;padding:14px 16px;font-size:14px;color:var(--ink)}
+  .why b{color:var(--bronze-dk)}
+
+  .flow{position:relative;margin-top:4px}
+  .flow:before{content:"";position:absolute;left:18px;top:8px;bottom:8px;width:2px;background:var(--line)}
+  .step{position:relative;display:flex;gap:16px;padding:11px 0}
+  .step .dot{flex:0 0 auto;width:38px;height:38px;border-radius:50%;background:var(--card);border:2px solid var(--bronze);color:var(--navy);display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-weight:600;font-size:.95rem;z-index:1}
+  .step .bd{flex:1;padding-top:3px}
+  .step h5{font-size:.98rem;font-weight:600;margin-bottom:3px}
+  .step .say{background:#F8F6F1;border:1px solid var(--line-2);border-radius:9px;padding:9px 12px;font-size:13.5px;color:var(--ink);margin-top:5px;font-style:italic}
+  .step .dir{font-size:12.5px;color:var(--muted);margin-top:5px}
+
+  .capt{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:4px}
+  .capt div{background:#F8F6F1;border:1px solid var(--line-2);border-radius:9px;padding:11px 13px;font-size:13.5px;color:var(--ink)}
+  .capt div b{display:block;font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--bronze-dk);margin-bottom:2px}
+
+  .tips{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+  .tip{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+  .tip h4{font-size:.98rem;font-weight:600;margin-bottom:6px;color:var(--navy);border:0;padding:0;letter-spacing:0;text-transform:none;font-family:'Fraunces',serif}
+  .tip p{font-size:13.5px;color:var(--muted)}
+
+  .note{background:#F3EEE4;border:1px solid var(--line);border-radius:12px;padding:15px 18px;font-size:14px;color:var(--ink)}
+  .note b{color:var(--bronze-dk)}
+
+  footer{padding:30px 0;text-align:center;color:var(--muted);font-size:13px}
+  footer .l{max-width:680px;margin:0 auto 10px;font-size:12.5px}
+
+  @media(max-width:760px){.capt,.tips{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="wordmark">Heysa Helena de Sales<small>Advocacia Tributária</small></div>
+    <h1>Roteiros de Ocasião<br><em>quando a oportunidade aparece</em></h1>
+    <p class="lead">Duas ocasiões desta semana — a ida ao Rio e o evento de quinta — transformadas em conteúdo que <strong>fortalece o seu posicionamento</strong>. E, mais que isso: um modelo que serve para qualquer tribunal, audiência ou evento que vier pela frente.</p>
+  </div>
+</header>
+
+<!-- PRINCÍPIO -->
+<section>
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="eyebrow">A ideia</span>
+      <h2>Sua rotina é a sua maior prova de autoridade</h2>
+    </div>
+    <div class="principle">
+      <h3>Por que esse tipo de conteúdo importa para você</h3>
+      <p>Ninguém precisa <em>dizer</em> que é autoridade quando <em>mostra</em> a rotina de quem opera no nível mais alto: despachar em segunda instância, circular onde os empresários discutem o futuro do negócio. É o que a sua marca defende — <strong>seriedade, técnica e presença</strong> — visto, não afirmado. Este é o tipo de conteúdo que constrói percepção de referência sem uma única palavra de venda. E é o que respeita a sua régua: <strong>a autoridade aparece pela cena, não pela promessa.</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- OAB -->
+<section>
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="eyebrow">A régua que governa tudo</span>
+      <h2>O que pode e o que não pode — sempre</h2>
+      <p>Estes dois roteiros lidam com situações reais (um caso em andamento, clientes de terceiros). Por isso a régua da OAB aqui é ainda mais rígida. <strong>Leia isto antes dos roteiros — vale para os dois.</strong></p>
+    </div>
+    <div class="oab">
+      <h3>🚫 Nunca, em hipótese alguma:</h3>
+      <ul>
+        <li>Citar ou mostrar o <b>nome da empresa, o setor, o valor da dívida</b> ou qualquer dado que identifique o cliente</li>
+        <li>Mostrar <b>documentos legíveis</b>, número de processo, nome do desembargador ou peças do caso</li>
+        <li>Prometer, garantir ou insinuar <b>resultado</b> ("vou reverter", "vou resolver", "vou ganhar")</li>
+        <li>Transformar em "olha o caso que eu peguei" — isso é exposição de caso concreto, vedado</li>
+        <li>Qualquer tom de venda, captação ou "me chama que eu resolvo"</li>
+      </ul>
+      <h3 style="margin-top:16px">✅ Sempre:</h3>
+      <ul>
+        <li class="ok">Falar do <b>princípio genérico</b> ("por que uma empresa chega ao bloqueio"), nunca do caso específico</li>
+        <li class="ok">Usar a rotina como <b>cenário de uma lição</b>, não como vitrine de resultado</li>
+        <li class="ok">Manter o tom <b>sóbrio e educativo</b> — você ensina, não se exibe</li>
+        <li class="ok">Na dúvida sobre qualquer tela: <b>não publica.</b> A agência revisa tudo antes de ir ao ar</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ROTEIRO 1 · RIO -->
+<section>
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="eyebrow">Roteiro 1 · o mais estratégico</span>
+      <h2>Amanhã, no Rio: despacho em segunda instância</h2>
+    </div>
+
+    <div class="rot">
+      <div class="rot-h">
+        <div class="when">Amanhã · Rio de Janeiro · ao vivo nos stories + captação para depois</div>
+        <h3>"A rotina de quem leva a sério"</h3>
+        <p>O ângulo: você não vai mostrar um caso. Vai mostrar <b>por que uma empresa chega ao ponto de precisar de uma medida de urgência em segunda instância</b> — e o que teria evitado. A sua ida é o cenário; a lição é o conteúdo.</p>
+      </div>
+      <div class="rot-b">
+
+        <h4>Por que fortalece o seu posicionamento</h4>
+        <div class="why">Despachar em <b>segunda instância</b> mostra, sem dizer, que você opera no nível onde as decisões difíceis se resolvem. E o fecho amarra tudo à sua tese central: <b>"antes de chegar ao bloqueio, havia um diagnóstico que teria evitado."</b> A sua rotina vira a prova viva do que você prega. É o arquétipo do Sábio que também é Governante — quem entende a regra <em>e</em> atua onde ela se decide.</div>
+
+        <h4>Stories no dia — a sequência</h4>
+        <div class="flow">
+          <div class="step">
+            <div class="dot">1</div>
+            <div class="bd">
+              <h5>A saída (manhã) <span class="who w-vc">Você grava</span></h5>
+              <div class="say">"Hoje o escritório vai até o Rio. Dia de despachar em segunda instância."</div>
+              <div class="dir">🎥 Um clipe curto seu, sóbrio — no carro, na estação, a caminho. Sem drama, sem trilha épica. O tom é de quem faz isso com naturalidade porque é o trabalho.</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="dot">2</div>
+            <div class="bd">
+              <h5>A lição (o coração do conteúdo) <span class="who w-vc">Você grava</span></h5>
+              <div class="say">"Deixa eu te explicar por que uma empresa chega ao ponto de precisar de uma medida de urgência em segunda instância. Quando uma execução fiscal não é acompanhada de perto, ela avança — e pode chegar ao bloqueio de conta. Quando isso acontece, o caminho deixa de ser uma negociação tranquila e passa a ser uma corrida contra o tempo, no nível mais alto. Não precisava ter chegado aqui."</div>
+              <div class="dir">🎥 Clipe de ~20–30s, você falando para a câmera. É o único momento "técnico". Fala genérica — princípio, nunca o caso. Este é o clipe que a agência pode transformar num Reels de autoridade depois.</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="dot">3</div>
+            <div class="bd">
+              <h5>A chegada <span class="who w-vc">Você grava/fotografa</span></h5>
+              <div class="say">"Segunda instância. É aqui que se discute o que a primeira não resolveu."</div>
+              <div class="dir">📸 Foto/clipe da <b>fachada do tribunal</b> (é ambiente público, pode). Você entrando, de trajes formais. Nada de interior de sala, nada de documento à mostra.</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="dot">4</div>
+            <div class="bd">
+              <h5>O fecho — amarra na sua tese <span class="who w-vc">Você grava</span></h5>
+              <div class="say">"O que me traz aqui hoje poderia ter sido evitado com acompanhamento. Por isso eu sempre insisto: o diagnóstico não é sobre resolver depois — é sobre não chegar no bloqueio. Antes de pagar, parcelar ou simplesmente deixar correr, faça um diagnóstico."</div>
+              <div class="dir">🎥 Clipe curto de fechamento, já saindo ou no fim do dia. Fecha o arco: rotina → lição → sua mensagem central.</div>
+            </div>
+          </div>
+        </div>
+
+        <h4>Fotos e vídeos para captar (material para depois)</h4>
+        <div class="capt">
+          <div><b>Retrato sóbrio</b>Você de trajes formais, luz boa — vira post estático de autoridade.</div>
+          <div><b>Fachada do tribunal</b>Externa, ângulo limpo — cenário do "onde eu atuo".</div>
+          <div><b>B-roll sério</b>Pasta, caneta, mãos, você caminhando. Sem documento legível.</div>
+          <div><b>Clipes de 5s</b>Vários curtinhos de cada momento — a agência monta um Reels "bastidor" depois.</div>
+        </div>
+
+        <div class="note" style="margin-top:16px"><b>Uso depois:</b> desses clipes sai <b>1 Reels de autoridade</b> ("por que uma empresa chega ao bloqueio — e o que evita") + <b>1 post estático</b> (o retrato + a frase do diagnóstico). Tudo passa pela sua revisão antes de publicar.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ROTEIRO 2 · EVENTO -->
+<section>
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="eyebrow">Roteiro 2 · presença</span>
+      <h2>Quinta, no evento: estar onde o empresário está</h2>
+    </div>
+
+    <div class="rot">
+      <div class="rot-h">
+        <div class="when">Quinta · evento sobre reforma tributária · captação leve</div>
+        <h3>"Presença no ecossistema"</h3>
+        <p>Aqui o objetivo é o que você mesma disse: <b>captar imagem</b>, sem roteiro pesado. O tema do evento não é o seu foco — então o conteúdo fica <b>genérico e de presença</b>, sem falar dos clientes de lá, sem entrar num tema que não é o seu. Você só circula, capta, e a agência monta depois.</p>
+      </div>
+      <div class="rot-b">
+
+        <h4>Por que fortalece o seu posicionamento</h4>
+        <div class="why">Aparecer <b>onde os empresários discutem o futuro do negócio</b> reforça que você é parte do ecossistema — ativa, presente, procurada. Não precisa falar do tema do evento nem dos clientes de lá. A mensagem é sutil: <b>"onde tem empresa pensando em se organizar, eu estou por perto."</b></div>
+
+        <h4>Stories no dia — leve, 2 ou 3 telas</h4>
+        <div class="flow">
+          <div class="step">
+            <div class="dot">1</div>
+            <div class="bd">
+              <h5>A chegada <span class="who w-vc">Você grava</span></h5>
+              <div class="say">"Manhã de evento sobre reforma tributária. Onde tem empresário discutindo o futuro do negócio, é bom estar por perto."</div>
+              <div class="dir">🎥 Clipe curto seu, chegando. Leve e natural.</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="dot">2</div>
+            <div class="bd">
+              <h5>O ambiente <span class="who w-vc">Você fotografa/filma</span></h5>
+              <div class="dir">📸 Filme a mesa posta, o ambiente, os detalhes (os lanches, o material do evento). Pessoas só de longe ou de costas — <b>ninguém identificável em primeiro plano</b>. É b-roll de contexto.</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="dot">3</div>
+            <div class="bd">
+              <h5>Um insight genérico (opcional) <span class="who w-vc">Você grava</span></h5>
+              <div class="say">"A reforma tributária não é assunto só de grande indústria. Bar, restaurante, comércio — todo negócio vai sentir. E quem se organiza antes, sofre menos."</div>
+              <div class="dir">🎥 Só se você estiver confortável. Fala genérica, sem citar ninguém do evento nem o tema específico da palestra. Se preferir não gravar, tudo bem — a presença já é o conteúdo.</div>
+            </div>
+          </div>
+        </div>
+
+        <h4>Fotos e vídeos para captar (material para depois)</h4>
+        <div class="capt">
+          <div><b>Você no contexto</b>Um retrato ou clipe seu no ambiente profissional do evento.</div>
+          <div><b>Ambiente e mesa</b>Os detalhes que você mencionou — lanches, mesa, material.</div>
+          <div><b>Clipes de 5–10s</b>Vários curtos de cada coisa, para sobrar material de montagem.</div>
+          <div><b>Detalhes neutros</b>Que digam "evento empresarial" sem identificar o público específico.</div>
+        </div>
+
+        <div class="note" style="margin-top:16px"><b>Uso depois:</b> a agência monta um "cartão de presença" — um story ou post curto posicionando você <b>presente no meio empresarial</b>, com um gancho genérico de reforma/organização. <b>Sem</b> dizer que era evento de bar/restaurante, <b>sem</b> expor os clientes de lá. Só a presença + a mensagem.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DICAS DE CAPTAÇÃO -->
+<section>
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="eyebrow">O como</span>
+      <h2>Dicas para captar sozinha (foto e filmagem)</h2>
+      <p>Valem para as duas ocasiões — e para qualquer outra. O objetivo é sair com <strong>material sobrando</strong>, para a agência ter de onde escolher.</p>
+    </div>
+    <div class="tips">
+      <div class="tip"><h4>Vertical, sempre</h4><p>Grave e fotografe em pé (vertical) pensando em story e Reels. Se um detalhe pedir horizontal, capte nos dois — mas priorize vertical.</p></div>
+      <div class="tip"><h4>Luz no seu rosto, não atrás</h4><p>Fique de frente para a luz (janela, entrada). Luz atrás de você escurece o rosto. Evite sol duro do meio-dia batendo de cima.</p></div>
+      <div class="tip"><h4>Firmeza</h4><p>Apoie o celular numa superfície ou segure com as duas mãos, cotovelos junto ao corpo. Movimentos lentos. Nada de panorâmica rápida.</p></div>
+      <div class="tip"><h4>5 a 10 segundos de cada</h4><p>Grave clipes curtos, mas capte mais do que acha que precisa. É melhor sobrar. Pare, reposicione, grave de novo se errou a fala.</p></div>
+      <div class="tip"><h4>Enquadramento com folga</h4><p>Para os clipes seus falando: da cintura pra cima, com espaço nas laterais para as mãos aparecerem. Câmera na altura dos olhos.</p></div>
+      <div class="tip"><h4>Áudio</h4><p>Se for falar, procure um canto mais silencioso e fale perto do celular. Se o ambiente estiver barulhento, capte só imagem — a agência põe texto ou trilha depois.</p></div>
+      <div class="tip"><h4>Alguns takes "de respiro"</h4><p>Capte a cena sem você (fachada, mesa, ambiente) — são as passagens que a agência usa para montar o vídeo entre as suas falas.</p></div>
+      <div class="tip"><h4>Na dúvida do que pode aparecer</h4><p>Se tiver documento, tela, nome ou rosto de alguém no quadro — não grave, ou reposicione. Melhor perder a imagem do que ferir a régua.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="l">Comunicação em conformidade com o Provimento 205/2021 (OAB): conteúdo estritamente informativo e educativo, sem promessa de resultado, sem exposição de caso concreto ou de cliente. Todo material captado passa pela sua revisão antes de qualquer publicação.</p>
+    <p>Marketing Growth Digital · mktgrowthdigital.com</p>
+  </div>
+</footer>
+
+</body>
+</html>
