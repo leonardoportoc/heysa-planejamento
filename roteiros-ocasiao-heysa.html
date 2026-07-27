@@ -28,6 +28,7 @@
   .hero h1{font-size:clamp(1.9rem,4.2vw,2.8rem);line-height:1.1;font-weight:600;margin:22px 0 12px;color:#fff}
   .hero h1 em{color:var(--bronze);font-style:italic}
   .hero .lead{font-size:1.05rem;color:#C9D0DC;max-width:680px}
+  .hero .lead strong{color:var(--bronze);font-weight:600}
 
   section{padding:48px 0;border-bottom:1px solid var(--line)}
   section:last-of-type{border-bottom:0}
@@ -84,10 +85,21 @@
   .note{background:#F3EEE4;border:1px solid var(--line);border-radius:12px;padding:15px 18px;font-size:14px;color:var(--ink)}
   .note b{color:var(--bronze-dk)}
 
+  .part{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-family:'Fraunces',serif;font-weight:600;font-size:1.02rem;color:#fff;border-radius:10px;padding:11px 16px;margin:22px 0 4px}
+  .part.a{background:linear-gradient(100deg,var(--vc),#A06A44)}
+  .part.b{background:linear-gradient(100deg,var(--ag),#4A6089)}
+  .part .who{margin-left:auto}
+  .partsub{font-size:13.5px;color:var(--muted);margin:0 2px 12px}
+
+  .gloss{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+  .gterm{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:13px 16px}
+  .gterm b{font-family:'Fraunces',serif;font-size:1rem;color:var(--navy);display:block;margin-bottom:2px}
+  .gterm span{font-size:13px;color:var(--muted)}
+
   footer{padding:30px 0;text-align:center;color:var(--muted);font-size:13px}
   footer .l{max-width:680px;margin:0 auto 10px;font-size:12.5px}
 
-  @media(max-width:760px){.capt,.tips{grid-template-columns:1fr}}
+  @media(max-width:760px){.capt,.tips,.gloss{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -142,6 +154,29 @@
   </div>
 </section>
 
+<!-- GLOSSÁRIO -->
+<section>
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="eyebrow">Antes de começar</span>
+      <h2>Glossário rápido</h2>
+      <p>As poucas palavras técnicas que aparecem aqui — para nada te travar na leitura.</p>
+    </div>
+    <div class="gloss">
+      <div class="gterm"><b>Story (ou stories)</b><span>A publicação que fica 24h no topo do Instagram, em tela cheia. Some depois — é o "dia a dia" do perfil.</span></div>
+      <div class="gterm"><b>Reels</b><span>Um vídeo curto e vertical que fica no feed (não some). É onde vai o conteúdo mais elaborado, de autoridade.</span></div>
+      <div class="gterm"><b>Feed</b><span>A galeria do seu perfil — os posts que ficam fixos, diferente dos stories que somem.</span></div>
+      <div class="gterm"><b>Clipe</b><span>Um pedacinho curto de vídeo (poucos segundos). Vários clipes juntos viram um Reels.</span></div>
+      <div class="gterm"><b>B-roll</b><span>Imagens de apoio, sem ninguém falando: a paisagem, a fachada, suas mãos, o ambiente. Servem de fundo para o texto ou a narração.</span></div>
+      <div class="gterm"><b>Take</b><span>Cada tentativa de gravar um clipe. Se não gostou, grava outro take — normal fazer vários.</span></div>
+      <div class="gterm"><b>Enquadramento</b><span>Como você/a cena fica dentro da tela: o que aparece, o que fica de fora, a altura da câmera.</span></div>
+      <div class="gterm"><b>Vertical</b><span>Celular em pé (formato de story e Reels). É sempre assim que você grava.</span></div>
+      <div class="gterm"><b>Card</b><span>Uma arte/imagem parada com um texto — sem vídeo. A agência produz.</span></div>
+      <div class="gterm"><b>Trilha</b><span>A música de fundo do vídeo. A agência coloca depois, se precisar.</span></div>
+    </div>
+  </div>
+</section>
+
 <!-- ROTEIRO 1 · RIO -->
 <section>
   <div class="wrap">
@@ -161,52 +196,45 @@
         <h4>Por que fortalece o seu posicionamento</h4>
         <div class="why">Despachar em <b>segunda instância</b> mostra, sem dizer, que você opera no nível onde as decisões difíceis se resolvem. E o fecho amarra tudo à sua tese central: <b>"antes de chegar ao bloqueio, havia um diagnóstico que teria evitado."</b> A sua rotina vira a prova viva do que você prega. É o arquétipo do Sábio que também é Governante — quem entende a regra <em>e</em> atua onde ela se decide.</div>
 
-        <div class="note" style="margin-bottom:16px;background:#EEF3F0;border-color:#CFE0D6"><b>Como funciona:</b> você <b>não precisa falar nada</b> na câmera. Só grava a imagem (b-roll) — a caminho, a fachada, você andando — e a agência coloca o <b>texto na tela</b>. Cada bloco abaixo traz a imagem que você capta e o texto que vai por cima.</div>
-        <h4>Stories no dia — a sequência</h4>
+        <div class="part a">PARTE A — no dia, você posta ao vivo <span class="who w-vc">Você faz sozinha</span></div>
+        <p class="partsub">3 stories simples, postados no momento. Você grava o clipe (sem falar), <b>escreve o texto no próprio Instagram</b> — é só digitar uma frase por cima da imagem — e posta. Leva 1 minuto cada.</p>
         <div class="flow">
           <div class="step">
             <div class="dot">1</div>
             <div class="bd">
-              <h5>A saída (manhã) <span class="who w-vc">Você capta imagem</span></h5>
-              <div class="dir">🎥 Um clipe curto <b>sem fala</b> — a paisagem pela janela do carro, seus pés andando na estação, a estrada. Sóbrio, sem drama.</div>
-              <div class="say"><b>Texto na tela:</b> "Hoje eu vou até o Rio. Dia de despachar em segunda instância."</div>
+              <h5>Ao sair (manhã)</h5>
+              <div class="dir">📱 Grave um clipe curto sem falar — a paisagem pela janela, seus pés andando, a estrada. Digite o texto por cima e poste.</div>
+              <div class="say"><b>Texto para digitar:</b> "Hoje eu vou até o Rio. Dia de despachar em segunda instância."</div>
             </div>
           </div>
           <div class="step">
             <div class="dot">2</div>
             <div class="bd">
-              <h5>A lição (o coração do conteúdo) <span class="who w-vc">Você capta imagem</span></h5>
-              <div class="dir">🎥 B-roll <b>sem fala</b> — você caminhando séria, a paisagem, a chegada. A agência transforma isso num Reels com o texto abaixo aparecendo em partes (uma frase por vez).</div>
-              <div class="say"><b>Texto na tela (em sequência):</b> "Por que uma empresa chega ao ponto de precisar de uma medida de urgência em segunda instância?" → "Quando uma execução fiscal não é acompanhada de perto, ela avança — e pode chegar ao bloqueio de conta." → "Aí o caminho deixa de ser uma negociação tranquila e vira uma corrida contra o tempo, no nível mais alto." → "Não precisava ter chegado aqui."</div>
+              <h5>Ao chegar no tribunal</h5>
+              <div class="dir">📱 Tire uma foto (ou clipe) da frente do tribunal, com você entrando. Digite o texto e poste.</div>
+              <div class="say"><b>Texto para digitar:</b> "Segunda instância. É aqui que se discute o que a primeira não resolveu."</div>
             </div>
           </div>
           <div class="step">
             <div class="dot">3</div>
             <div class="bd">
-              <h5>A chegada <span class="who w-vc">Você fotografa</span></h5>
-              <div class="dir">📸 Foto/clipe da <b>fachada do tribunal</b> (ambiente público, pode). Você entrando, de trajes formais. Nada de interior de sala, nada de documento à mostra.</div>
-              <div class="say"><b>Texto na tela:</b> "Segunda instância. É aqui que se discute o que a primeira não resolveu."</div>
-            </div>
-          </div>
-          <div class="step">
-            <div class="dot">4</div>
-            <div class="bd">
-              <h5>O fecho — amarra na sua tese <span class="who w-vc">Você capta imagem</span></h5>
-              <div class="dir">🎥 Um clipe curto <b>sem fala</b>, já saindo ou no fim do dia. Fecha o arco: rotina → lição → sua mensagem central.</div>
-              <div class="say"><b>Texto na tela:</b> "O que me trouxe aqui poderia ter sido evitado com acompanhamento. O diagnóstico não é sobre resolver depois — é sobre não chegar no bloqueio. Antes de pagar, parcelar ou deixar correr, faça um diagnóstico."</div>
+              <h5>Ao terminar (saindo ou fim do dia)</h5>
+              <div class="dir">📱 Um clipe curto seu saindo, ou só a paisagem. Digite o texto e poste — é o fecho que amarra tudo na sua mensagem.</div>
+              <div class="say"><b>Texto para digitar:</b> "Antes de pagar, parcelar ou deixar a dívida correr, faça um diagnóstico. Quando não se acompanha, o problema chega aqui."</div>
             </div>
           </div>
         </div>
 
-        <h4>Fotos e vídeos para captar (material para depois)</h4>
+        <div class="part b">PARTE B — você só grava e me envia (a gente edita depois) <span class="who w-ag">Agência edita</span></div>
+        <p class="partsub">Aqui você <b>não posta nada</b>. Só captura o material bruto e me manda. A agência transforma num Reels de autoridade e num post — e devolve para a sua revisão antes de publicar.</p>
         <div class="capt">
-          <div><b>Retrato sóbrio</b>Você de trajes formais, luz boa — vira post estático de autoridade.</div>
-          <div><b>Fachada do tribunal</b>Externa, ângulo limpo — cenário do "onde eu atuo".</div>
-          <div><b>B-roll sério</b>Pasta, caneta, mãos, você caminhando. Sem documento legível.</div>
-          <div><b>Clipes de 5s</b>Vários curtinhos de cada momento — a agência monta um Reels "bastidor" depois.</div>
+          <div><b>Imagens para a "lição"</b>Você caminhando séria, a paisagem, a chegada — vários clipes de uns 5 segundos, sem falar. É sobre essas imagens que vamos escrever a explicação (por que uma empresa chega ao bloqueio — e o que evita).</div>
+          <div><b>Retrato sóbrio</b>Você de trajes formais, com luz boa. Vira um post de autoridade.</div>
+          <div><b>Frente do tribunal</b>Foto/clipe limpo da fachada, sem você — serve de cenário.</div>
+          <div><b>Detalhes</b>Pasta, caneta, suas mãos, você andando. Nunca documento legível, nome ou número de processo.</div>
         </div>
 
-        <div class="note" style="margin-top:16px"><b>Uso depois:</b> desses clipes sai <b>1 Reels de autoridade</b> ("por que uma empresa chega ao bloqueio — e o que evita") + <b>1 post estático</b> (o retrato + a frase do diagnóstico). Tudo passa pela sua revisão antes de publicar.</div>
+        <div class="note" style="margin-top:16px"><b>Resumindo:</b> na <b>Parte A</b> você aproveita o momento e posta 3 stories simples (imagem + texto que você digita). Na <b>Parte B</b> você só junta material bruto e envia — o conteúdo mais elaborado a gente monta depois, com a sua revisão.</div>
       </div>
     </div>
   </div>
@@ -231,43 +259,37 @@
         <h4>Por que fortalece o seu posicionamento</h4>
         <div class="why">Aparecer <b>onde os empresários discutem o futuro do negócio</b> reforça que você é parte do ecossistema — ativa, presente, procurada. Não precisa falar do tema do evento nem dos clientes de lá. A mensagem é sutil: <b>"onde tem empresa pensando em se organizar, eu estou por perto."</b></div>
 
-        <div class="note" style="margin-bottom:16px;background:#EEF3F0;border-color:#CFE0D6"><b>Como funciona:</b> igual ao Rio — você <b>não fala na câmera</b>. Só capta imagem, e a agência coloca o texto por cima.</div>
-        <h4>Stories no dia — leve, 2 ou 3 telas</h4>
+        <div class="part a">PARTE A — no dia, você posta ao vivo <span class="who w-vc">Você faz sozinha</span></div>
+        <p class="partsub">1 ou 2 stories simples, no momento. Grava o clipe sem falar, digita o texto no Instagram e posta.</p>
         <div class="flow">
           <div class="step">
             <div class="dot">1</div>
             <div class="bd">
-              <h5>A chegada <span class="who w-vc">Você capta imagem</span></h5>
-              <div class="dir">🎥 Clipe curto <b>sem fala</b> — a entrada do evento, você chegando, o ambiente. Leve e natural.</div>
-              <div class="say"><b>Texto na tela:</b> "Manhã de evento sobre reforma tributária. Onde tem empresário pensando no futuro do negócio, é bom estar por perto."</div>
+              <h5>Ao chegar</h5>
+              <div class="dir">📱 Clipe curto da entrada do evento, você chegando, o ambiente. Digite o texto e poste.</div>
+              <div class="say"><b>Texto para digitar:</b> "Manhã de evento sobre reforma tributária. Onde tem empresário pensando no futuro do negócio, é bom estar por perto."</div>
             </div>
           </div>
           <div class="step">
             <div class="dot">2</div>
             <div class="bd">
-              <h5>O ambiente <span class="who w-vc">Você fotografa/filma</span></h5>
-              <div class="dir">📸 Filme a mesa posta, o ambiente, os detalhes (os lanches, o material do evento). Pessoas só de longe ou de costas — <b>ninguém identificável em primeiro plano</b>. B-roll de contexto, sem fala.</div>
-            </div>
-          </div>
-          <div class="step">
-            <div class="dot">3</div>
-            <div class="bd">
-              <h5>Um insight genérico (opcional) <span class="who w-vc">Você capta imagem</span></h5>
-              <div class="dir">🎥 Um clipe do ambiente <b>sem fala</b> — só para servir de fundo ao texto.</div>
-              <div class="say"><b>Texto na tela:</b> "A reforma tributária não é assunto só de grande indústria. Bar, restaurante, comércio — todo negócio vai sentir. E quem se organiza antes, sofre menos."</div>
+              <h5>Um recado genérico (opcional)</h5>
+              <div class="dir">📱 Um clipe do ambiente para servir de fundo. Digite o texto e poste — só se quiser, a presença já basta.</div>
+              <div class="say"><b>Texto para digitar:</b> "A reforma tributária não é assunto só de grande indústria. Bar, restaurante, comércio — todo negócio vai sentir. Quem se organiza antes, sofre menos."</div>
             </div>
           </div>
         </div>
 
-        <h4>Fotos e vídeos para captar (material para depois)</h4>
+        <div class="part b">PARTE B — você só grava e me envia (a gente edita depois) <span class="who w-ag">Agência edita</span></div>
+        <p class="partsub">Não posta nada aqui — só capta e manda. A agência monta um post/story de presença depois, com a sua revisão.</p>
         <div class="capt">
-          <div><b>Você no contexto</b>Um retrato ou clipe seu no ambiente profissional do evento.</div>
-          <div><b>Ambiente e mesa</b>Os detalhes que você mencionou — lanches, mesa, material.</div>
-          <div><b>Clipes de 5–10s</b>Vários curtos de cada coisa, para sobrar material de montagem.</div>
-          <div><b>Detalhes neutros</b>Que digam "evento empresarial" sem identificar o público específico.</div>
+          <div><b>Você no contexto</b>Um retrato ou clipe seu no ambiente do evento.</div>
+          <div><b>Ambiente e mesa</b>Os detalhes que você mencionou — os lanches, a mesa, o material.</div>
+          <div><b>Vários clipes de 5–10s</b>De cada coisa, para sobrar material de montagem.</div>
+          <div><b>Só cenário</b>Pessoas de longe ou de costas — ninguém identificável em primeiro plano.</div>
         </div>
 
-        <div class="note" style="margin-top:16px"><b>Uso depois:</b> a agência monta um "cartão de presença" — um story ou post curto posicionando você <b>presente no meio empresarial</b>, com um gancho genérico de reforma/organização. <b>Sem</b> dizer que era evento de bar/restaurante, <b>sem</b> expor os clientes de lá. Só a presença + a mensagem.</div>
+        <div class="note" style="margin-top:16px"><b>O que a agência faz com isso:</b> um "cartão de presença" — post curto posicionando você <b>presente no meio empresarial</b>, com um gancho genérico de reforma. <b>Sem</b> dizer que era evento de bar/restaurante, <b>sem</b> expor os clientes de lá. Só a presença + a mensagem.</div>
       </div>
     </div>
   </div>
