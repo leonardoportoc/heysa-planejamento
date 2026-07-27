@@ -99,10 +99,16 @@
   footer{padding:30px 0;text-align:center;color:var(--muted);font-size:13px}
   footer .l{max-width:680px;margin:0 auto 10px;font-size:12.5px}
 
-  @media(max-width:760px){.capt,.tips,.gloss{grid-template-columns:1fr}}
+  .backbtn{position:fixed;top:16px;left:16px;z-index:60;display:inline-flex;align-items:center;gap:7px;background:rgba(22,35,58,.82);backdrop-filter:blur(5px);color:#EDE7DA;border:1px solid rgba(176,141,87,.55);border-radius:999px;padding:8px 15px 8px 12px;font-family:'Inter',sans-serif;font-size:13px;font-weight:600;text-decoration:none;transition:.18s;box-shadow:0 4px 14px rgba(16,23,40,.25)}
+  .backbtn:hover{background:var(--bronze);color:#16233A;border-color:var(--bronze)}
+  .backbtn .arw{font-size:16px;line-height:1;margin-top:-1px}
+
+  @media(max-width:760px){.capt,.tips,.gloss{grid-template-columns:1fr}.backbtn{font-size:12px;padding:7px 13px 7px 10px}}
 </style>
 </head>
 <body>
+
+<a class="backbtn" href="index.html"><span class="arw">←</span> Voltar</a>
 
 <header class="hero">
   <div class="wrap">
